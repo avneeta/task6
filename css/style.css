@@ -189,8 +189,7 @@ ul.dropdown-menu li{
 }
 .w3layouts-banner-info h3{
     color: #FFFFFF;
-    font-size: 6.5em;
-    margin: 0;
+    font-size: 4.5em;
     text-transform: uppercase;
     font-weight: 600;
 }
@@ -210,7 +209,6 @@ ul.dropdown-menu li{
 .w3ls-button a {
 	color: #ffffff;
     font-size: 1em;
-    padding: .5em 2em;
     border: solid 2px #8BC34A;
     text-decoration: none;
     margin: 0;
