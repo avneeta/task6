@@ -38,18 +38,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 }
 hr {
     display: block;
-    height: 1px;
+    height: 2px;
     border: 0;
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
 }
-.agileits-heading h3, p {
+.agileits-heading h3{
 	font-size: 22px;
 	color: green;
 	padding: 0px;
 	margin-top: 10px;
 	margin-bottom: 0px;
+}
+.agileits-heading p {
+	font-size: 22px;
+	color: green;
+	padding: 0px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+#alerTable p {
+	font-size: 18px;
+	margin: 5px;	
 }
 </style>
 <!-- //font -->
@@ -146,39 +157,31 @@ hr {
 		</div>
 	<!-- header ends here, edited by Xin -->
 
-<!-- 			<div id="menuUserUl">
-					<a href="#index.html" class="menuUser">Home</a>
-					<a href="#about" 	class="menuUser">Transfer</a>
-					<a href="#products" class="menuUser">Deposit</a>
-					<a href="#clients" class="menuUser">Withdraw</a>
-					<a href="#clients" class="menuUser">Pay Bills</a>
-					<a href="#contact" class="menuUser">Open an Account</a>
-					<a href="#contact" class="menuUser">Account History</a>
-					<a href="#contact" class="menuUser">Loans</a>
-			</div> -->
-
-
-	<!-- //banner -->
 	<!-- welcome -->
 	<div style="background: white">
 
 		<div class="container">
-			<div class="agileits-heading">
+			<div class="agileits-heading" style="margin-bottom: 0px">
 				<!-- <h3> Welcome back, Michael! </h3> -->
-				<p id="welcomeUser" style="text-align:center;"> Welcome back, Michael </p>
+				<p id="welcomeUser" style="text-align:center; color:black; font-size: 30px"> Welcome back, Michael </p>
 			</div>
 
-			<div class="w3lcome-grids">
+			<div class="w3lcome-grids" style="margin-top: 0px;">
 			<form>
 			  <div class="form-group" style="margin-left: 100px; margin-top: 0px;">
-			<!-- 	<p> <i> Welcome, team06 member 1 </i> </p> -->
+				<p style="color: green;margin-bottom: 0px; padding: 0px"> <i> Personal Account </i> </p>
+				<table>
+				<tr>
+				<td>
 				<hr>
 			    <label for="exampleInputEmail1"> My Checking Account</label>
 			    <ul>
-			    	<li> <a href="#"> Personal 0123-4567-0001 </a> <span style="margin-left:200px"> </span>
+			    	<li> <a href="#"> Personal 0123-4567-0011 </a> <span style="margin-left:160px"> </span>
+			    	    <input class="idName" type="button" size="20" value="checki1"/>
 			    		<input type="text" id="checking1" size="12" value="$ 3333.33" readonly="readonly" style="text-align:right;">
 			    	</li>
-					<li> <a href="#"> Personal 0333-7777-9999 </a> <span style="margin-left:200px"> </span>
+					<li> <a href="#"> Personal 0333-7777-9999 </a> <span style="margin-left:160px"> </span>
+						<input class="idName" type="button" size="20" value="checki2"/>
 						<input type="text" size="12" value="$ 2222.22" readonly="readonly" style="text-align:right;">
 					</li>
 			    	<small id="emailHelp" id="checking2" class="form-text text-muted">Thanks for working with us.</small>
@@ -186,10 +189,12 @@ hr {
 			    <hr>
 				<label for="exampleInputEmail1"> My Saving Account</label>
 				<ul>
-			    	<li> <a href="#"> Personal 0123-4567-1001 </a> <span style="margin-left:200px"> </span>
+			    	<li> <a href="#"> Personal 0123-4567-3681 </a> <span style="margin-left:160px"> </span>
+			    		<input class="idName" type="button" size="20" value="saving1"/>
 			    		<input type="text" id="saving1" size="12" value="$ 5555.55" readonly="readonly" style="text-align:right;">
 			    	</li>
-					<li> <a href="#"> Personal 0666-6666-1002 </a> <span style="margin-left:200px"> </span>
+					<li> <a href="#"> Personal 0666-6666-1002 </a> <span style="margin-left:160px"> </span>
+					<input class="idName" type="button" size="20" value="saving2"/>
 						<input type="text" id="saving2" size="12" value="$ 6666.66" readonly="readonly" style="text-align:right;">
 					</li>
 				    <small id="emailHelp" class="form-text text-muted">A Interest Rate will be awarded.</small>
@@ -197,12 +202,42 @@ hr {
 			    <hr>
 				<label for="exampleInputEmail1"> My Growth Account</label>
 				<ul>
-					<li> <a href="#"> Personal 0888-8888-8888 </a> <span style="margin-left:200px"> </span>
+					<li> <a href="#"> Personal 0888-8888-8888 </a> <span style="margin-left:160px"> </span>
+			    		<input class="idName" type="button" size="20" value="growth1"/>
 						<input type="text" id="growth2" size="12" value="$ 8888.88" readonly="readonly" style="text-align:right;">
 					</li>
 				    <small id="emailHelp" class="form-text text-muted">A Huge Interest Rate will be awarded.</small>
 				</ul>
 				<hr>
+				<td>
+				<td valign="top">
+					<div id="alert" style="color: green; margin-left: 60px; margin-right: 10px;">
+						<br>
+						<h3> Activity Center </h3>
+							<br>
+						<table id="alerTable" border="1">
+							<tr>
+								<td> <p> Alerts <br> </p> </td>
+								<td> <p> Bill Pay <br></p> </td>
+								<td> <p> Transfer <br></p> </td>
+							</tr>
+
+							<tr>
+								<td> <p> Deposit </p> </td>
+								<td> <p> History </p> </td>
+								<td> <p> Open an Acount </p> </td>
+							</tr>
+
+							<tr>
+								<td> <p> Messages </p> </td>
+								<td> <p> Offer </p> </td>
+								<td> <p> Lending </p> </td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				</tr>
+				</table>
 			  </div>
 			</form>
 			</div>
