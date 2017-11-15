@@ -36,7 +36,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 #menuUserUl {
 	color: green;
 }
-
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0; 
+}
+.agileits-heading h3, p {
+	font-size: 22px;
+	color: green;
+	padding: 0px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
 </style>
 <!-- //font -->
 <script src="js/jquery-1.11.1.min.js"></script>
@@ -152,35 +166,50 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 		<div class="container">
 			<div class="agileits-heading">
-				<h2>About</h2>
+				<!-- <h3> Welcome back, Michael! </h3> -->
+				<p id="welcomeUser" style="text-align:center;"> Welcome back, Michael </p>
 			</div>
+
 			<div class="w3lcome-grids">
-
-
-
 			<form>
-			  <div class="form-group" style="margin-left: 100px;">
+			  <div class="form-group" style="margin-left: 100px; margin-top: 0px;">
+			<!-- 	<p> <i> Welcome, team06 member 1 </i> </p> -->
+				<hr>
 			    <label for="exampleInputEmail1"> My Checking Account</label>
 			    <ul>
-			    	<li> <a href="#"> check-personal-0301 </a> 
-			    		<input type="text" size="40" value="1111.11" readonly="readonly" align="right">
+			    	<li> <a href="#"> Personal 0123-4567-0001 </a> <span style="margin-left:200px"> </span>
+			    		<input type="text" id="checking1" size="12" value="$ 3333.33" readonly="readonly" style="text-align:right;">
 			    	</li>
-					<li> <a href="#"> check-personal-0666 </a> 
-						<input type="text" size="40" value="2222.22" readonly="readonly" align="right">
+					<li> <a href="#"> Personal 0333-7777-9999 </a> <span style="margin-left:200px"> </span>
+						<input type="text" size="12" value="$ 2222.22" readonly="readonly" style="text-align:right;">
 					</li>
-			    	<small id="emailHelp" class="form-text text-muted">Thanks for working with us.</small>
+			    	<small id="emailHelp" id="checking2" class="form-text text-muted">Thanks for working with us.</small>
 			    </ul>
-			    <br>
-
+			    <hr>
 				<label for="exampleInputEmail1"> My Saving Account</label>
 				<ul>
-					<li> saving--0899 </li>
-					<li> saving--0908 </li>
-				    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+			    	<li> <a href="#"> Personal 0123-4567-1001 </a> <span style="margin-left:200px"> </span> 
+			    		<input type="text" id="saving1" size="12" value="$ 5555.55" readonly="readonly" style="text-align:right;">
+			    	</li>
+					<li> <a href="#"> Personal 0666-6666-1002 </a> <span style="margin-left:200px"> </span> 
+						<input type="text" id="saving2" size="12" value="$ 6666.66" readonly="readonly" style="text-align:right;">
+					</li>
 				    <small id="emailHelp" class="form-text text-muted">A Interest Rate will be awarded.</small>
 				</ul>
+			    <hr>
+				<label for="exampleInputEmail1"> My Growth Account</label>
+				<ul>
+					<li> <a href="#"> Personal 0888-8888-8888 </a> <span style="margin-left:200px"> </span> 
+						<input type="text" id="growth2" size="12" value="$ 8888.88" readonly="readonly" style="text-align:right;">
+					</li>
+				    <small id="emailHelp" class="form-text text-muted">A Huge Interest Rate will be awarded.</small>
+				</ul>
+				<hr>
+			  </div>
+			</form>
 			</div>
 
+			<br>
 				<div class="welcome-agile-row">
 					<div class="col-md-6 welcome-grid">
 						<div class="welcome-grid-right">
