@@ -59,8 +59,14 @@ hr {
 	margin-bottom: 0px;
 }
 #alerTable p {
-	font-size: 18px;
-	margin: 5px;	
+	font-size: 16px;
+	margin: 3px;
+	text-align: center;
+}
+#alerTable.Zbutton {
+	font-size: 14px;
+	text-align: center;
+	margin: 0px;	
 }
 </style>
 <!-- //font -->
@@ -106,7 +112,7 @@ hr {
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav">
 								<!-- <li><a href="blog.html">Login</a></li> -->
-								<li><form><input type="text" value="" size="14" onFocus="this.value='';" onBlur="if (this.value == '') {this.value ='';}"></form></li>
+								<li><form><input type="text" value="" size="14" placeholder="Seach from here.." onFocus="this.value='';" onBlur="if (this.value == '') {this.value ='';}"></form></li>
 								<li><a href="#"><span style="color:white;" class="glyphicon glyphicon-search"> </span></a></li>
 								<li class="dropdown">
 									<a href="index.html" class="dropdown-toggle" data-hover="Pages" data-toggle="dropdown"> Language <b class="caret"></b></a>
@@ -151,48 +157,55 @@ hr {
 		<div class="container">
 			<div class="agileits-heading" style="margin-bottom: 0px">
 				<!-- <h3> Welcome back, Michael! </h3> -->
-				<p id="welcomeUser" style="text-align:center; color:black; font-size: 30px"> Welcome back, Michael </p>
+				<p id="welcomeUser" style="text-align:center; color:black; font-size: 30px">
+				   Welcome back, Michael </p>
 			</div>
 
 			<div class="w3lcome-grids" style="margin-top: 0px;">
 			<form>
 			  <div class="form-group" style="margin-left: 100px; margin-top: 0px;">
-				<p style="color: green;margin-bottom: 0px; padding: 0px"> <i> Personal Account Manage</i> </p>
+				<p style="color: green;margin-bottom: 0px; padding: 0px; margin-top: 20px;"> 
+					<i> Personal Account Manage</i> </p>
 				<table>
 					<tr>
 						<td>
 							<hr>
 					    	<label for="exampleInputEmail1"> My Checking Account</label>
 					    	<ul>
-						    	<li> <a href="#"> Personal 0123-4567-8931 </a> <span style="margin-left:160px"> </span>
+						    	<li> <a href="#"> Personal 0123-4567-8901 </a>
+									<span style="margin-left:100px;"> </span>
 						    	    <input class="idName" type="button" size="20" value="checki1"/>
-						    		<input type="text" id="checking1" size="12" value="$ 3333.33" readonly="readonly" style="text-align:right;">
+						    		<input type="text" id="checking1" size="12" value="$ 3333.33" readonly="readonly" style="text-align:right; margin-right:30px">
 						    	</li>
-								<li> <a href="#"> Personal 0333-7777-2222 </a> <span style="margin-left:160px"> </span>
+								<li> <a href="#"> Personal 9333-7777-2222 </a>
+									<span style="margin-left:100px;"> </span>
 									<input class="idName" type="button" size="20" value="checki2"/>
-									<input type="text" size="12" value="$ 2222.22" readonly="readonly" style="text-align:right;">
+									<input type="text" size="12" value="$ 2222.22" readonly="readonly" style="text-align:right; margin-right:30px">
 								</li>
 						    	<small id="emailHelp" id="checking2" class="form-text text-muted">Checking acount is flexiable.</small>
 					    	</ul>
 							<hr>
 							<label for="exampleInputEmail1"> My Saving Account</label>
 							<ul>
-						    	<li> <a href="#"> Personal 0123-4567-3681 </a> <span style="margin-left:160px"> </span>
+						    	<li> <a href="#"> Personal 5123-4567-3686 </a>
+									<span style="margin-left:100px;"> </span>
 						    		<input class="idName" type="button" size="20" value="saving1"/>
-						    		<input type="text" id="saving1" size="12" value="$ 5555.55" readonly="readonly" style="text-align:right;">
+						    		<input type="text" id="saving1" size="12" value="$ 5555.55" readonly="readonly" style="text-align:right; margin-right:30px">
 						    	</li>
-								<li> <a href="#"> Personal 0666-6666-3333 </a> <span style="margin-left:160px"> </span>
-								<input class="idName" type="button" size="20" value="saving2"/>
-									<input type="text" id="saving2" size="12" value="$ 6666.66" readonly="readonly" style="text-align:right;">
+								<li> <a href="#"> Personal 8666-6666-3333 </a>
+									<span style="margin-left:100px; "> </span>
+									<input class="idName" type="button" size="20" value="saving2"/>
+									<input type="text" id="saving2" size="12" value="$ 6666.66" readonly="readonly" style="text-align:right; margin-right:30px">
 								</li>
 							    <small id="emailHelp" class="form-text text-muted">A interest rate will be awarded.</small>
 							</ul>
 							<hr>
 							<label for="exampleInputEmail1"> My Growth Account</label>
 							<ul>
-								<li> <a href="#"> Personal 0888-8888-8888 </a> <span style="margin-left:160px"> </span>
+								<li> <a href="#"> Personal 0888-8888-8888 </a> 
+									<span style="margin-left:100px;"> </span>
 						    		<input class="idName" type="button" size="20" value="growth1"/>
-									<input type="text" id="growth2" size="12" value="$ 8888.88" readonly="readonly" style="text-align:right;">
+									<input type="text" id="growth2" size="12" value="$ 8888.88" readonly="readonly" style="text-align:right; margin-right:30px">
 								</li>
 							    <small id="emailHelp" class="form-text text-muted">A Huge chance to gain profit.</small>
 							</ul>
@@ -200,29 +213,44 @@ hr {
 						<td>
 
 						<td valign="top">
-							<div id="alert" style="color: green; margin-left: 60px; margin-right: 10px;">
-								<br>
+							<div id="alert" style="color: green; margin-left: 50px; padding: 0px">
 								<h3> Activity Center </h3>
 								<br>
-								<table id="alerTable" border="1">
+								<table id="alerTable" border="1" style="border-collapse:separate; text-align: center;">
 									<tr>
-										<td> <p> Alerts </p> </td>
-										<td> <p> Bill Pay </p> </td>
-										<td> <p> Transfer </p> </td>
+										<td> <a href="#">  Account Histroy </a> </td>
+										<td> <a href="#">  Pay Bills </a> </td>
+										<td> <a href="#">  Alert </a> </td>
+<!-- 										<td> <input type="button" class="Zbutton" size="80" value="Account Histroy"> </td>
+										<td> <input type="button" class="Zbutton" size="80" value="Pay Bills"> </td>
+										<td> <input type="button" class="Zbutton" size="80" value="Alert"> </td> -->
+									</tr> 
+									<tr>
+										<td> <a href="#">  Transfer </a> </td>
+										<td> <a href="#">  Open an Account </a> </td>
+										<td> <a href="#">  Lending </a> </td>
+<!-- 										<td> <input type="button" class="Zbutton" size="80" value="Transfer"> </td>
+										<td> <input type="button" class="Zbutton" size="80" value="Open an Account"> </td>
+										<td> <input type="button" class="Zbutton" size="80" value=" Lending"> </td> -->
 									</tr>
-
 									<tr>
-										<td> <p> Deposit </p> </td>
-										<td> <p> History </p> </td>
-										<td> <p> Open an Acount </p> </td>
-									</tr>
-
-									<tr>
-										<td> <p> Messages </p> </td>
-										<td> <p> Offer </p> </td>
-										<td> <p> Lending </p> </td>
+										<td> <a href="#">  Deposit </a> </td>
+										<td> <a href="#">  More Offers </a> </td>
+										<td> <a href="#">  Messages </a> </td>
+<!-- 										<td> <input type="button" class="Zbutton" size="80" value="Deposit"> </td>
+										<td> <input type="button" class="Zbutton" size="80" value="More Offers"> </td>
+										<td> <input type="button" class="Zbutton" size="80" value="Messages"> </td> -->
 									</tr>
 								</table>
+								<br>
+								<hr>
+								<div id="contactDE">
+									<h3> More Options </h3>
+									<p> Want to schedule an appointment with us ? </p>									
+									<img src="./images/1.jpg" width="120" height="80" />
+									<img src="./images/1.jpg" width="120" height="80" />
+									<img src="./images/1.jpg" width="120" height="80" />
+								</div>
 							</div>
 						</td>
 					</tr>
