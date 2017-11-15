@@ -2539,4 +2539,43 @@ input[type="submit"]:hover {
 	color: #8BC34A !important;
 }
 /*main-nav ends*/
+
+/*user-nav starts*/
+.user-nav {
+  margin: 1.5em 1em 0 0;
+}
+.user-nav ul li a{
+	 color: #ffffff !important;
+    font-size: 1.1em;
+    margin:  0.6em 0.6em 0 0;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.user-nav ul li a:hover{
+   background:none;
+}
+.user-nav ul li{
+    display: inline-block;
+    float: left;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background: none;
+    box-shadow: 1px 0px 0px 0px rgba(72, 72, 72, 0);
+    outline: none;
+    border-right: none;
+}
+
+.user-nav ul li a.list-border{
+	border: 5px solid:red;
+}
+.user-nav ul li a:hover{
+    color: #8BC34A !important;
+}
+.user-nav ul li a.active{
+	color: #8BC34A !important;
+}
+/*user-nav ends*/
+
 /*-- //responsive --*/
