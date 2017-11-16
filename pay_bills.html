@@ -21,6 +21,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		function hideURLbar() {
 			window.scrollTo(0, 1);
 		}
+
+		// function valueChanged() {
+		// 	if ($('.input-checkbox').is(":checked"))
+		// 		$(".new-payee-info").show();
+		// 	else
+		// 		$(".new-payee-info").hide();
+		// }
 	</script>
 	<!-- bootstrap-css -->
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
@@ -106,6 +113,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<li><a href="index.html">Español</a></li>
 									</ul>
 								</li>
+								<li><a href="index.html">Logout</a></li>
 							</ul>
 							<div class="clearfix"> </div>
 						</div>
@@ -170,145 +178,362 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 
 				<ul class="nav nav-tabs">
-					<li class="nav-item active"><a class="nav-link" data-toggle="tab" href="#home">Pay Company</a></li>
-					<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#menu1">Pay Person</a></li>
-					<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#menu2">Set Auto-pay</a></li>
+					<li class="nav-item active"><a class="nav-link" data-toggle="tab" href="#menu1">Pay Company</a></li>
+					<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#menu2">Pay Person</a></li>
+					<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#menu3">Set Auto-pay</a></li>
+					<li class="nav-item hidden"><a class="nav-link" id="make-payment-tab" data-toggle="tab" href="#menu4">account</a></li>
 				</ul>
 
-				<div class="tab-content">
-					<div id="home" class="tab-pane fade in active">
+				<div class="tab-content" style="padding-left:10px" ;>
+					<div id="menu1" class="tab-pane fade in active">
 						<br>
-						<form style="padding-left:10px;">
+						<form>
 							<div class="form-group">
-								<input type="email" class="form-control active" style="width:48%;display:inline-block;" value="Search from current payee list" size="30" onFocus="this.value='';" onBlur="if (this.value == '') {this.value ='Search from current payee list';}">
+								<input type="text" class="form-control active" id="search-company" style="width:48%;display:inline-block;" value="Search from current payee list" size="30" onFocus="this.value='';" onBlur="if (this.value == '') {this.value ='Search from current payee list';}">
 								<a href="# "><span style="color:black; display:inline-block; " class="glyphicon glyphicon-search "> </span></a>
 								<br><br>
-								<label for="exampleInputEmail1 ">Company Name</label>
-								<input type="email " class="form-control " id="exampleInputEmail1 " aria-describedby="emailHelp " placeholder="Enter email " style="width:50%;">
+								<input type="checkbox" style="margin-right:10px" class="input-checkbox" id="pay-company-check" onchange="companyChanged();">Pay a new company？
+								<br>
 							</div>
-							<div class="form-group ">
-								<label for="exampleInputPassword1 ">Account Number</label>
-								<input type="password " class="form-control " id="exampleInputPassword1 " placeholder="Password " style="width:50%;">
+							<div class="nextStep">
+								<button type="button" id="companybutton1" href="#chooseAccount" class="btn btn-primary" onclick="chooseAccount()">Next Step</button>
 							</div>
-							<div class="form-check">
-								<label class="form-check-label">
+							<br>
+							<!-- Checkbock hide javascript-->
+
+							<script type="text/javascript">
+								function companyChanged() {
+									if ($('.input-checkbox').is(":checked"))
+										$(".add-company-payee-info").show() && $(companybutton1).hide();
+									else
+										$(".add-company-payee-info").hide() && $(companybutton1).show();
+								}
+							</script>
+							<!-- Checkbock hide javascript ends-->
+
+							<div class="add-company-payee-info" hidden>
+								<div class="form-group">
+									<label for="company-name">Company Name</label>
+									<input type="text" class="form-control " id="company-name" placeholder="" style="width:50%;">
+								</div>
+								<div class="form-group">
+									<label for="company-account">Account Number</label>
+									<input type="text" class="form-control " id="company-account" placeholder="" style="width:50%;">
+								</div>
+								<div class="form-check">
+									<label class="form-check-label">
 											<input type="checkbox" class="form-check-input">
 						Add to my payee list
 										</label></div>
-							<button type="submit" class="btn btn-primary">Next Step</button>
+								<button type="button" id="companybutton2" href="#chooseAccount" class="btn btn-primary" onclick="chooseAccount()">Next Step</button>
+								<br>
 						</form>
 						<br>
+						<br>
+						</div>
 					</div>
 
-					<div id="menu1" class="tab-pane fade">
-						<br>
-						<form style="padding-left:10px;">
-							<div class="form-group">
-								<input type="email" class="form-control" style="width:51%;display:inline-block;" value="Search from current payee list" size="30" onFocus="this.value='';" onBlur="if (this.value == '') {this.value ='Search from current payee list';}">
-								<a href="# "><span style="color:black; display:inline-block; " class="glyphicon glyphicon-search "> </span></a>
-								<br><br>
-								<label for="FirstName">First Name:&nbsp;</label>
-								<input type="email " class="form-control " id="FirstName" aria-describedby="emailHelp " placeholder="" style="width:18%; display:inline-block;">
-								<label for="LastName">&nbsp;&nbsp;Last Name:&nbsp;</label>
-								<input type="email " class="form-control " id="LastName" aria-describedby="emailHelp " placeholder="" style="width:18%; display:inline-block;">
-							</div>
-							<div class="form-group ">
-								<label for="Address1 ">Address Line1:</label>
-								<input type="password " class="form-control " id="Address1 " placeholder="" style="width:53.5%;">
-							</div>
-							<div class="form-group ">
-								<label for="Address2 ">Address Line2:(optional)</label>
-								<input type="password " class="form-control " id="Address2" placeholder="" style="width:53.5%;">
-							</div>
-							<div class="form-group ">
-								<label for="city">City:</label>
-								<input type="password" class="form-control" id="city" placeholder=" " style="width:11.5%;display:inline-block;">
-								<label for="states">&nbsp;&nbsp;States:&nbsp;</label>
-								<input type="password" class="form-control" id="states" placeholder=" " style="width:12.5%;display:inline-block;">
-								<label for="zipcode">&nbsp;&nbsp;ZIP Code:&nbsp;</label>
-								<input type="password " class="form-control " id="zipcode" placeholder="" style="width:11.5%;display:inline-block;">
-							</div>
-							<div class="form-group ">
-
-							</div>
-							<div class="form-group ">
-								<label for="phoneNumber">Phone Number:&nbsp;</label>
-								<input type="password " class="form-control " id="phoneNumber" placeholder="" style="width:53.5%">
-							</div>
-							<div class="form-group ">
-								<label for="email">Email Address:&nbsp;</label>
-								<input type="password " class="form-control " id="email" placeholder="" style="width:53.5%">
-							</div>
-
-							<div class="form-check">
-								<label class="form-check-label">
-											<input type="checkbox" class="form-check-input">
-						Add to my payee list
-										</label></div>
-							<button type="submit" class="btn btn-primary">Next Step</button>
-						</form>
-						<br>
-					</div>
 					<div id="menu2" class="tab-pane fade">
-						<h3>Menu 2</h3>
-						<p>Some content in menu 2.</p>
+						<br>
+						<form>
+							<div class="form-group">
+								<input type="text" class="form-control" id="search-person" style="width:51%;display:inline-block;" value="Search from current payee list" size="30" onFocus="this.value='';" onBlur="if (this.value == '') {this.value ='Search from current payee list';}">
+								<a href="# "><span style="color:black; display:inline-block; " class="glyphicon glyphicon-search "> </span></a>
+								<br><br>
+								<input type="checkbox" style="margin-right:10px" class="input-checkbox" id="pay-person-checkbox" onchange="personChanged();">Pay a new person？
+								<br></div>
+							<div class="nextStep">
+								<button type="button" id="personbutton1" href="#chooseAccount" class="btn btn-primary" onclick="chooseAccount()">Next Step</button>
+							</div>
+							<br>
+							<!-- Checkbock hide javascript-->
+							<script type="text/javascript">
+								function personChanged() {
+									if ($('.input-checkbox').is(":checked"))
+										$(".add-person-payee-info").show() && $(personbutton1).hide();
+									else
+										$(".add-person-payee-info").hide() && $(personbutton1).show();;
+								}
+							</script>
+							<!-- Checkbock hide javascript ends-->
+
+							<div class="add-person-payee-info" hidden>
+								<div class="form-group">
+									<label for="first-name">First Name:&nbsp;</label>
+									<input type="text" class="form-control " id="first-name" placeholder="" style="width:18%; display:inline-block;">
+									<label for="last-name">&nbsp;&nbsp;Last Name:&nbsp;</label>
+									<input type="email " class="form-control " id="last-name" placeholder="" style="width:18%; display:inline-block;">
+								</div>
+								<div class="form-group">
+									<label for="address1">Address Line1:</label>
+									<input type="text" class="form-control " id="address1" placeholder="" style="width:53.5%;">
+								</div>
+								<div class="form-group ">
+									<label for="address2 ">Address Line2:(optional)</label>
+									<input type="text" class="form-control " id="address2" placeholder="" style="width:53.5%;">
+								</div>
+								<div class="form-group ">
+									<label for="city">City:</label>
+									<input type="text" class="form-control" id="city" placeholder=" " style="width:11.5%;display:inline-block;">
+									<label for="states">&nbsp;&nbsp;States:&nbsp;</label>
+									<input type="text" class="form-control" id="states" placeholder=" " style="width:12.5%;display:inline-block;">
+									<label for="zipcode">&nbsp;&nbsp;ZIP Code:&nbsp;</label>
+									<input type="text" class="form-control " id="zipcode" placeholder="" style="width:11.5%;display:inline-block;">
+								</div>
+								<div class="form-group ">
+
+								</div>
+								<div class="form-group ">
+									<label for="phone-number">Phone Number:&nbsp;</label>
+									<input type="text" class="form-control " id="phone-number" placeholder="" style="width:53.5%">
+								</div>
+								<div class="form-group ">
+									<label for="email">Email Address:&nbsp;</label>
+									<input type="email" class="form-control " id="email" placeholder="" style="width:53.5%">
+								</div>
+
+								<div class="form-check">
+									<label class="form-check-label">
+											<input type="checkbox" class="form-check-input">
+						Add to my payee list
+										</label></div>
+
+								<button type="button" id="personbutton2" class="btn btn-primary" onclick="chooseAccount()">Next Step</button>
+								<br>
+						</form>
+						<br><br>
+						</div>
+					</div>
+
+					<!-- button hide javascript-->
+					<script type="text/javascript">
+						function chooseAccount() {
+							$('#make-payment-tab').tab('show');
+						}
+					</script>
+					<!-- button hide javascript ends-->
+
+					<div id="menu3" class="tab-pane fade">
+						<br>
+						<div class="form-group">
+							<input type="text" class="form-control" id="search-auto-name" style="width:51%;display:inline-block;" value="Search from current payee list" size="30" onFocus="this.value='';" onBlur="if (this.value == '') {this.value ='Search from current payee list';}">
+							<a href="# "><span style="color:black; display:inline-block; " class="glyphicon glyphicon-search "> </span></a>
+							<br><br>
+							<input type="radio" style="margin-right:10px" name="radAnswer" class="input-radio" id="radio1" onchange="valueChanged();" style="display:inline-block;">Pay a new company？
+							<input type="radio" style="margin-right:10px" name="radAnswer" class="input-radio" id="radio2" onchange="valueChanged();" style="display:inline-block;">Pay a new person？
+							<br><br></div>
+						<hr>
+
+						<!-- Checkbock hide javascript-->
+						<script type="text/javascript">
+							function valueChanged() {
+								if ($(radio1).is(":checked"))
+									$(".new-company-payee-info2").show();
+								else
+									$(".new-company-payee-info2").hide();
+
+								if ($(radio2).is(":checked"))
+									$(".new-person-payee-info2").show();
+								else
+									$(".new-person-payee-info2").hide();
+							}
+						</script>
+						<!-- Checkbock hide javascript ends-->
+
+						<div class="new-company-payee-info2" hidden>
+							<div class="form-group">
+								<label for="company-name2">Company Name</label>
+								<input type="text" class="form-control " id="company-name2" placeholder="" style="width:53.5%;">
+							</div>
+							<div class="form-group">
+								<label for="company-account2">Account Number</label>
+								<input type="text" class="form-control " id="company-account2" placeholder=" " style="width:53.5%;">
+							</div>
+							<div class="form-check">
+								<label class="form-check-label">
+																		<input type="checkbox" class="form-check-input">
+													Add to my payee list
+																	</label></div>
+							</form>
+							<hr>
+						</div>
+
+						<div class="new-person-payee-info2" hidden>
+							<div class="form-group">
+								<label for="firstName2">First Name:&nbsp;</label>
+								<input type="text" class="form-control " id="firstName2" placeholder="" style="width:18%; display:inline-block;">
+								<label for="lastName2">&nbsp;&nbsp;Last Name:&nbsp;</label>
+								<input type="text" class="form-control " id="lastName2" placeholder="" style="width:18%; display:inline-block;">
+							</div>
+							<div class="form-group ">
+								<label for="address2 ">Address Line1:</label>
+								<input type="text" class="form-control " id="address21" placeholder="" style="width:53.5%;">
+							</div>
+							<div class="form-group ">
+								<label for="address22 ">Address Line2:(optional)</label>
+								<input type="text" class="form-control " id="address22" placeholder="" style="width:53.5%;">
+							</div>
+							<div class="form-group ">
+								<label for="city2">City:</label>
+								<input type="text" class="form-control" id="city2" placeholder=" " style="width:11.5%;display:inline-block;">
+								<label for="states2">&nbsp;&nbsp;States:&nbsp;</label>
+								<input type="text" class="form-control" id="states2" placeholder=" " style="width:12.5%;display:inline-block;">
+								<label for="zipcode2">&nbsp;&nbsp;ZIP Code:&nbsp;</label>
+								<input type="text " class="form-control " id="zipcode2" placeholder="" style="width:11.5%;display:inline-block;">
+							</div>
+							<div class="form-group ">
+
+							</div>
+							<div class="form-group ">
+								<label for="phone-number2">Phone Number:&nbsp;</label>
+								<input type="text " class="form-control " id="phone-number2" placeholder="" style="width:53.5%">
+							</div>
+							<div class="form-group ">
+								<label for="email2">Email Address:&nbsp;</label>
+								<input type="email " class="form-control " id="email2" placeholder="" style="width:53.5%">
+							</div>
+
+							<div class="form-check">
+								<label class="form-check-label">
+											<input type="checkbox" class="form-check-input">
+						Add to my payee list
+										</label></div>
+							</form>
+							<hr>
+						</div>
+
+						<div class="accountInfo">
+							<div class="form-group ">
+								<label for="auto-amount">Amount&nbsp;</label>
+								<input type="text" class="form-control " id="auto-amount" placeholder="" style="width:30%">
+							</div>
+							<div class="form-group ">
+								<label for="account-to-pay">Choose your account&nbsp;</label>
+								<select class="form-control" id="account-to-pay" style="width:30%">
+									<option>Checking account 0123-4567-8901 </option>
+									<option>Checking account 9333-7777-2222</option>
+									<option>Saving account 5123-4567-3686</option>
+									<option>Saving account 8666-6666-3333</option>
+									<option>Growth account 0888-8888-8888</option>
+								</select>
+							</div>
+							<div class="form-group ">
+								<label for="date">First Payment Date&nbsp;</label>
+								<input type="date" name="user_date" class="form-control" id="date" placeholder="" style="width:30%">
+							</div>
+							<div class="form-group ">
+								<label for="frequency">Frequency:&nbsp;</label>
+								<select class="form-control" id="frequency" style="width:30%">
+    							<option>Select a frequency</option>
+									<option>Weekly</option>
+    							<option>Every 2 weeks</option>
+    							<option>Monthly</option>
+    							<option>Every 2 months</option>
+									<option>Every 3 months</option>
+									<option>Every 6 months</option>
+									<option>Annually</option>
+  							</select><br>
+								<!-- <input type="password " class="form-control " id="frequency" placeholder="" style="width:53.5%"> -->
+								<button type="button" id="autopaybutton2" class="btn btn-primary" ;>Start the Auto-Payment</button>
+							<br><br></div>
+						</div>
+					</div>
+
+
+
+					<div id="menu4" class="tab-pane fade">
+						<br>
+						<div class="form-group">
+							<label for="auto-amount">Amount&nbsp;</label>
+							<input type="text" class="form-control " id="auto-amount" style="width:30%">
+						</div>
+						<div class="form-group ">
+							<label for="account-to-pay">Choose your account&nbsp;</label>
+							<select class="form-control" id="account-to-pay" style="width:30%">
+					<option>Checking account 0123-4567-8901 </option>
+					<option>Checking account 9333-7777-2222</option>
+					<option>Saving account 5123-4567-3686</option>
+					<option>Saving account 8666-6666-3333</option>
+					<option>Growth account 0888-8888-8888</option>
+				</select><br>
+							<input type="checkbox" style="margin-right:10px" class="input-checkbox" id="schedule-checkbox" onchange="scheduleChanged();">Schedule a payment?
+							</div>
+						<!-- Checkbock hide javascript-->
+						<script type="text/javascript">
+							function scheduleChanged() {
+								if ($('.input-checkbox').is(":checked"))
+									$(schedule).show();
+								else
+									$(schedule).hide();
+							}
+						</script>
+						<!-- Checkbock hide javascript ends-->
+						<div class="form-group" id="schedule" hidden>
+							<label for="date">Payment Date&nbsp;</label>
+							<input type="date" name="user_date" class="form-control" id="scheduledate" placeholder="" style="width:30%">
+						</div>
+						<div class="nextStep">
+							<button type="submit" id="make-payment-button1" href="#chooseAccount" class="btn btn-primary">Make the payment</button>
+						</div>
+						<br><br>
 					</div>
 				</div>
 
-		<!-- footer starts here, edited by Xin-->
-		<div class="footer ">
-			<div class="container ">
-				<h3><a href="index.html ">Devonshire</a></h3><br>
-				<a href="# " title="Notice of Privacy Practices " style="color:white ">Notice of Privacy Practices </a> |
-				<a href="# " title="Terms of Use " style="color:white "> Terms of Use </a> |
-				<a href="# " title="Online Privacy & Security " style="color:white "> Online Privacy & Security</a>
-				<p>Copyright © 2017 Devonshire. All rights reserved</a>
-				</p>
-				<div class="social-icons ">
-					<ul>
-						<li><a href="# " class="fa fa-facebook icon icon-border facebook "> </a></li>
-						<li><a href="# " class="fa fa-twitter icon icon-border twitter "> </a></li>
-						<li><a href="# " class="fa fa-google-plus icon icon-border googleplus "> </a></li>
-						<li><a href="# " class="fa fa-dribbble icon icon-border dribbble "> </a></li>
-						<li><a href="# " class="fa fa-rss icon icon-border rss "> </a></li>
-					</ul>
+				<!-- footer starts here, edited by Xin-->
+				<div class="footer">
+					<div class="container">
+						<h3><a href="index.html">Devonshire</a></h3><br>
+						<a href="#" title="Notice of Privacy Practices" style="color:white">Notice of Privacy Practices </a> |
+						<a href="#" title="Terms of Use" style="color:white"> Terms of Use </a> |
+						<a href="#" title="Online Privacy & Security" style="color:white"> Online Privacy & Security</a>
+						<p>Copyright © 2017 Devonshire. All rights reserved</a>
+						</p>
+						<div class="social-icons">
+							<ul>
+								<li><a href="#" class="fa fa-facebook icon icon-border facebook"> </a></li>
+								<li><a href="#" class="fa fa-twitter icon icon-border twitter"> </a></li>
+								<li><a href="#" class="fa fa-google-plus icon icon-border googleplus"> </a></li>
+								<li><a href="#" class="fa fa-dribbble icon icon-border dribbble"> </a></li>
+								<li><a href="#" class="fa fa-rss icon icon-border rss"> </a></li>
+							</ul>
+						</div>
+					</div>
 				</div>
-			</div>
-		</div>
-		<!-- //footer ends here, edited by Xin-->
-		<script src="js/responsiveslides.min.js "></script>
-		<script src="js/jarallax.js "></script>
-		<script src="js/SmoothScroll.min.js "></script>
-		<script type="text/javascript ">
-			/* init Jarallax */
-			$('.jarallax').jarallax({
-				speed: 0.5,
-				imgWidth: 1366,
-				imgHeight: 768
-			})
-		</script>
+				<!-- //footer ends here, edited by Xin-->
 
-		<script type="text/javascript " src="js/move-top.js "></script>
-		<script type="text/javascript " src="js/easing.js "></script>
-		<!-- here stars scrolling icon -->
-		<script type="text/javascript ">
-			$(document).ready(function() {
-				/*
-					var defaults = {
-					containerID: 'toTop', // fading element id
-					containerHoverID: 'toTopHover', // fading element hover id
-					scrollSpeed: 1200,
-					easingType: 'linear'
-					};
-				*/
+				<script src="js/responsiveslides.min.js"></script>
+				<script src="js/jarallax.js"></script>
+				<script src="js/SmoothScroll.min.js"></script>
+				<script type="text/javascript">
+					/* init Jarallax */
+					$('.jarallax').jarallax({
+						speed: 0.5,
+						imgWidth: 1366,
+						imgHeight: 768
+					})
+				</script>
 
-				$().UItoTop({
-					easingType: 'easeOutQuart'
-				});
+				<script type="text/javascript" src="js/move-top.js"></script>
+				<script type="text/javascript" src="js/easing.js"></script>
+				<!-- here stars scrolling icon -->
+				<script type="text/javascript">
+					$(document).ready(function() {
+						/*
+							var defaults = {
+							containerID: 'toTop', // fading element id
+							containerHoverID: 'toTopHover', // fading element hover id
+							scrollSpeed: 1200,
+							easingType: 'linear'
+							};
+						*/
 
-			});
-		</script>
-		<!-- //here ends scrolling icon -->
+						$().UItoTop({
+							easingType: 'easeOutQuart'
+						});
+
+					});
+				</script>
+				<!-- //here ends scrolling icon -->
 </body>
 
 </html>
