@@ -222,7 +222,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="add-company-payee-info">
 								<div class="form-group">
 									<label for="company-name">From Account</label>
-									<select class="form-control" id="account-to-pay" style="width:30%">
+									<select class="form-control" id="pay from account" style="width:30%">
 									<option>Checking account 0123-4567-8901 </option>
 									<option>Checking account 9333-7777-2222</option>
 									<option>Saving account 5123-4567-3686</option>
@@ -294,13 +294,51 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="form-group">
 									<label for="company-account">To Account</label>
 									<select class="form-control" id="account-to-pay" style="width:30%">
-									<option>Checking account 0123-4567-8901 </option>
-									<option>Checking account 9333-7777-2222</option>
-									<option>Saving account 5123-4567-3686</option>
-									<option>Saving account 8666-6666-3333</option>
-									<option>Growth account 0888-8888-8888</option>
+									<option>Select </option>
 								</select>
 								</div>
+								<input type="checkbox" style="margin-right:10px" class="input-checkbox" id="pay-person-checkbox" onchange="personChanged();">Add new External Account<br>
+								<br>
+								<script type="text/javascript">
+								function personChanged() { 
+									if ($('.input-checkbox').is(":checked"))
+										$(".add-person-payee-info").show() && $(personbutton1).hide();
+									else
+										$(".add-person-payee-info").hide() && $(personbutton1).show();;
+								}
+							</script>
+							<div class="add-person-payee-info" hidden>
+									<label for="company-account"> Account Type</label>
+									<select class="form-control" id="account-to-pay" style="width:30%">
+									<option>Checking account </option>
+\									<option>Saving account </option>
+									<option>Growth account </option>
+								</select>
+								<div class="form-group">
+									<label for="address1">Routing Number</label>
+									<input type="text" class="form-control " id="address1" placeholder="" style="width:53.5%;">
+								</div>
+								
+								
+								<div class="form-group ">
+									<div class="form-group ">
+									<label for="phone-number"> Account Number&nbsp;</label>
+									<input type="text" class="form-control " id="phone-number" placeholder="" style="width:53.5%">
+								</div>
+								</div>
+								<div class="form-group ">
+									<label for="phone-number">Re-enter Account Number&nbsp;</label>
+									<input type="text" class="form-control " id="phone-number" placeholder="" style="width:53.5%">
+								</div>
+							<div><label for="company-account"> Verification Method</label>
+							<select class="form-control" id="account-to-pay" style="width:30%">
+									<option>Verify Instantly </option>
+									<option>Verify with last two deposits </option><br><br>
+								
+							</select><br><br>
+						</div>
+					</div>
+
 								<div class="form-check">
 								</div>
 								<button type="button" id="companybutton2" href="#chooseAccount" class="btn btn-primary" onclick="chooseAccount()">Next Step</button>
@@ -326,14 +364,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<input type="text" class="form-control " id="auto-amount" style="width:30%">
 					</div>
 					<div class="form-group ">
-						<label for="account-to-pay">Choose your account&nbsp;</label>
-						<select class="form-control" id="account-to-pay" style="width:30%">
-				<option>Checking account 0123-4567-8901 </option>
-				<option>Checking account 9333-7777-2222</option>
-				<option>Saving account 5123-4567-3686</option>
-				<option>Saving account 8666-6666-3333</option>
-				<option>Growth account 0888-8888-8888</option>
-			</select><br>
+				
 						<input type="checkbox" style="margin-right:10px" class="input-checkbox" id="schedule-checkbox" onchange="scheduleChanged();">Schedule a payment?
 					</div>
 					<!-- Checkbock hide javascript-->
@@ -413,13 +444,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="form-group ">
 								<label for="email">Email Address:&nbsp;</label>
 								<input type="email" class="form-control " id="email" placeholder="" style="width:53.5%">
-							</div>
+						
 
 							<div class="form-check">
 								<label class="form-check-label">
 											<input type="checkbox" class="form-check-input">
 						Add to my payee list
-										</label></div>
+										</label></div><br>
+																	</div>		<label for="account-to-pay">Choose your account&nbsp;</label>
+
+										<select class="form-control" id="account-to-pay" style="width:30%">
+				<option>Checking account 0123-4567-8901 </option>
+				<option>Checking account 9333-7777-2222</option>
+				<option>Saving account 5123-4567-3686</option>
+				<option>Saving account 8666-6666-3333</option>
+				<option>Growth account 0888-8888-8888</option>
+			</select><br>
 
 							<button type="button" id="personbutton2" class="btn btn-primary" onclick="chooseAccount()">Next Step</button>
 							<br>
