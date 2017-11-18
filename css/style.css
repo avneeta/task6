@@ -2470,7 +2470,7 @@ i.fa.fa-map-marker,i.fa.fa-envelope-o,i.fa.fa-mobile{
     letter-spacing: 1px;
     font-family: 'Ropa Sans', sans-serif;
 }
-.banner-left input[type="text"],.banner-left input[type="email"],.banner-left input[type="tel"] {
+.banner-left input[type="text"],.banner-left input[type="email"],.banner-left input[type="tel"],.banner-left input[type="password"] {
     color: black;
     font-size: 1em;
     padding: .6em;
