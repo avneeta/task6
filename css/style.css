@@ -4,6 +4,14 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+.row .col-md-2, .row .col-md-1, .row .col-md-3 {
+    font:bold 20px Georgia;
+}
+
+.detail .row .col-md-2, .detail .row .col-md-1, .detail .row .col-md-3 {
+    font:normal 14px arial;
+}
+
 body a {
   transition: 0.5s all;
   -webkit-transition: 0.5s all;
