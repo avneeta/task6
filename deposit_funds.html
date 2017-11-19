@@ -186,12 +186,12 @@ ul.mapList {
                 	Find Local Branches </a></li>
             </ul>
 
-            <div class="tab-content" style="padding-left:10px" ;>
+            <div class="tab-content">
 
                 <div id="deposit-to-self" class="tab-pane fade in active">
 	              <form style="font-size:16px; padding-left:10px;" method="POST">
 
-		            <div class="form-group" class="w3lcome-grids" style="margin:10px;">
+		            <div class="form-group" class="w3lcome-grids">
 		                <label for="inputAmount"> Choose an account to get started </label>
 		                <select class="form-control" id="account-to-deposit" style="width:30%">
 		                    <option value="depoChecki1"> Checking account 0123-4567-8901 (default) </option>
@@ -202,14 +202,14 @@ ul.mapList {
 		                </select>
 		             </div>
 
-		            <div class="form-group" class="w3lcome-grids" style="margin:10px;">
+		            <div class="form-group" class="w3lcome-grids">
 		            	<label for="inputAmount"> Enter the amount below </label>
 		                <input type="text" class="form-control" id="inputAmount" placeholder="format like 0.00" 
 		                    style="width:30%">
 		            </div>
 
 		            <hr>
-		            <div class="form-group" style="margin:10px;">
+		            <div class="form-group">
 		                <label for="frontCheck"> Upload the front and back images of check </label> <br>
 		                <small class="form-text text-muted" style="margin-bottom:30px; color:red;"> 
 		                &nbsp;* Please be advised that our accepted image type is .jpg, .png or .pdf</small>
@@ -227,7 +227,7 @@ ul.mapList {
 		            </div>
 
 		            <hr>
-		            <div class="form-group" style="margin:20px;">
+		            <div class="form-group">
 		                <label for="frontCheck"> View your uploaded images </label>
 		                <br>
 		                <small class="form-text text-muted" style="margin:0px;"> &nbsp;* Resolution should be decent
@@ -235,32 +235,33 @@ ul.mapList {
 		                <br>
 		                <table style="margin:10px; padding:10px">
 		                <tr>
-		                    <td> <img src="images/2.jpg" height="180" width="280" alt="ImageFront"> </td>
+		                    <td> <img src="images/checkFront.png" height="150" width="300" alt="ImageFront"> </td>
 		                    <td> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; </td> 
-		                    <td> <img src="images/3.jpg" height="180" width="280" alt="ImageBack" > </td>
+		                    <td> <img src="images/checkBack.png" height="150" width="300" alt="ImageBack" > </td>
 		                </tr>
 		                </table>
 		            </div>
 
 		            <hr>
-		            <div class="form-check" class="w3lcome-grids" style="margin:10px;">
+		            <div class="form-check" class="w3lcome-grids">
 			              <label class="form-check-label"> 
 			                     <input type="checkbox" class="form-check-input"> Check me when ready to submit
 			              </label>
 			              <button type="submit" size="20" class="btn btn-primary" style="margin-left:20px;"> Submit </button>
 		              </div>
-
+		             <br>
+		             <br>
 	              </form>
                 </div>
 
                 <div id="deposit-at-branch" class="tab-pane fade">
 
-		            <div class="form-check" class="w3lcome-grids" style="margin:10px;">
+		            <div class="form-check" class="w3lcome-grids">
 			              <label class="form-check-label"> Enter your zipcode to search:&nbsp; </label>
 			              <input type="text" class="form-check-input" style="width: 200px"> 
 			              <button type="submit" size="20" class="btn btn-primary" style="margin-left:20px;"> Submit </button>
 			        </div>
-			        <div class="form-check" class="w3lcome-grids" style="margin-left:10px; margin-top:10px; margin-bottom:30px;">
+			        <div class="form-check" class="w3lcome-grids" style="margin-top:10px; margin-bottom:30px;">
 			              <label class="form-check-label"> Enter your address to search:&nbsp; </label>
 			              <input type="text" class="form-check-input" style="width: 200px"> 
 			              <button type="submit" size="20" class="btn btn-primary" style="margin-left:20px;"> Submit </button>
@@ -268,35 +269,36 @@ ul.mapList {
 			              <hr>
 		            </div>
 
-                	<div style="margin-left:10px;">
+                	<div>
 	                	<p> <b> Visit our Pittsburgh bank locations in the list below</b></p>
 	                	<ul class="mapList" style="margin-bottom: 30px;">
 	                		<li> 1000 Centre Ave, Pittsburgh, PA 15213 </li>
 	                		<li> 2000 Forbes Ave, Pittsburgh, PA 15217 </li>
 	                		<li> 3000 Murray Ave, Pittsburgh, PA 15232 </li>
-	                		<li> 4000 Hobart Ave, Pittsburgh, PA 1523 </li>
+	                		<li> 4000 Hobart Ave, Pittsburgh, PA 15233 </li>
 	                	</ul>
                 		<hr>
                 	</div>
 
+
 					<div class="show-map">
-						<div style="margin-left:10px;margin-bottom:0px">
+						<div style="margin-top: 20px; margin-bottom: 20px;">
             				<p> <b>Find our Pittsburgh locations by maps below</b> </p>
             			</div>
-						<table id="mapTable" cellspacing="4" cellpadding="4" style="margin-left:20px; padding:10px;">
+<!-- 					<table id="mapTable" cellspacing="4" cellpadding="4" style="margin-left:20px; padding:10px;">
 							<tr>
 								<td>
 									<p> Devonshire Location 1 </p>
 									<div class="image">
 										<img src="images/23.png" alt="map1" title="map1" height="180" width="280">
-										<figcaption> 1000 Centre Ave, Pittsburgh, PA 15213.	</figcaption>
+										<figcaption> 1000 Centre Ave, Pittsburgh, PA 15213	</figcaption>
 									</div>
 								</td>
 								<td>
 									<p> Devonshire Location 3 </p>
 									<div class="image">
 										<img src="images/23.png" alt="map1" title="map1" height="180" width="280">
-										<figcaption> 2000 Forbes Ave, Pittsburgh, PA 15217.	</figcaption>
+										<figcaption> 2000 Forbes Ave, Pittsburgh, PA 15217	</figcaption>
 									</div>
 								</td>
 							</tr>
@@ -305,21 +307,28 @@ ul.mapList {
 									<p> Devonshire Location 3 </p>
 									<div class="image">
 										<img src="images/23.png" alt="map1" title="map1" height="180" width="280">
-										<figcaption> 3000 Murray Ave, Pittsburgh, PA 15232.	</figcaption>
+										<figcaption> 3000 Murray Ave, Pittsburgh, PA 15232	</figcaption>
 									</div>
 								</td>
 								<td>
 									<p> Devonshire Location 4 </p>
 									<div class="image">
 										<img src="images/23.png" alt="map1" title="map1" height="180" width="280">
-										<figcaption> 4000 Hobart Ave, Pittsburgh, PA 15232.	</figcaption>
+										<figcaption> 4000 Hobart Ave, Pittsburgh, PA 15233	</figcaption>
 									</div>
 								</td>
 							</tr>
 						</table>
 					    <br>
-            			<hr>
+            			<hr> -->
+
+            			<div class=" col-md-6 map" style="margin-bottom: 30px;">
+							<iframe width="600" height="450" frameborder="0" style="border:0"
+							src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJkZqj4iPyNIgRkRiPR6mXTt4&key=AIzaSyClHQkSRLUQIbZi_7PNFzA1SzhXHRmUMso" allowfullscreen></iframe>
+						</div>
+						<br>
 					</div>
+
 				<!-- menu second-->
                 </div>
             </div>    
