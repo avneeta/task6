@@ -5,14 +5,25 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" lang="en" class="no-js">
 
 <head>
 	<title>Devonshire OBS| User Home:: w3layouts</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='https://fonts.googleapis.com/css?family=Jaldi:400,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<!-- CSS reset -->
+	<link rel="stylesheet" href="css/style_accordion.css">
+	<!-- Resource style -->
+
 	<meta name="keywords" content="Devonshire OBS, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script src="js/modernizr.js"></script>
+	<!-- Modernizr -->
 	<script type="application/x-javascript">
 		addEventListener("load", function() {
 			setTimeout(hideURLbar, 0);
@@ -172,7 +183,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="container">
 				<div class="agileits-heading">
 					<br>
-					<h4 style="font-size:35px; padding-left:10px;">Pay bills</h4>
+					<h4 style="font-size:35px; padding-left:10px;">Pay bills</h4><br>
 				</div>
 
 				<ul class="nav nav-tabs">
@@ -185,50 +196,123 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="tab-content" style="padding-left:10px" ;>
 					<div id="menu1" class="tab-pane fade in active">
 						<br>
-						<form>
-							<div class="form-group">
-								<input type="text" class="form-control active" id="search-company" style="width:48%;display:inline-block;" value="Search from current payee list" size="30" onFocus="this.value='';" onBlur="if (this.value == '') {this.value ='Search from current payee list';}">
-								<a href="# "><span style="color:black; display:inline-block; " class="glyphicon glyphicon-search "> </span></a>
-								<br><br>
-								<input type="checkbox" style="margin-right:10px" class="input-checkbox" id="pay-company-check" onchange="companyChanged();">Pay a new company？
-								<br>
-							</div>
-							<div class="nextStep">
-								<button type="button" id="companybutton1" href="#chooseAccount" class="btn btn-primary" onclick="chooseAccount()">Next Step</button>
-							</div>
+
+						<ul class="cd-accordion-menu animated">
+							<li class="has-children">
+								<input type="checkbox" name="group-1" id="group-1">
+								<label for="group-1">Utilities</label>
+								<ul>
+									<a href="#"><img src="images/DLC.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
+									<a href="#"><img src="images/people-natural-gas.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
+									<a href="#"><img src="images/columbia-gas-of-pa-horiz.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
+									<a href="#"><img src="images/westpenn.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
+								</ul>
+								<!-- <ul>
+									<li class="has-children">
+										<input type="checkbox" name="sub-group-1" id="sub-group-1">
+										<label for="sub-group-1">Sub Group 1</label>
+
+										<ul>
+											<li><a href="#0">Image</a></li>
+											<li><a href="#0">Image</a></li>
+											<li><a href="#0">Image</a></li>
+										</ul>
+									</li>
+									<li class="has-children">
+										<input type="checkbox" name="sub-group-2" id="sub-group-2">
+										<label for="sub-group-2">Sub Group 2</label>
+
+										<ul>
+											<li class="has-children">
+												<input type="checkbox" name="sub-group-level-3" id="sub-group-level-3">
+												<label for="sub-group-level-3">Sub Group Level 3</label>
+
+												<ul>
+													<li><a href="#0">Image</a></li>
+													<li><a href="#0">Image</a></li>
+												</ul>
+											</li>
+											<li><a href="#0">Image</a></li>
+										</ul>
+									</li>
+									<li><a href="#0">Image</a></li>
+									<li><a href="#0">Image</a></li>
+								</ul> -->
+							</li>
+
+							<li class="has-children">
+								<input type="checkbox" name="group-2" id="group-2">
+								<label for="group-2">Phone</label>
+
+								<ul>
+									<a href="#"><img src="images/att.jpg" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
+									<a href="#"><img src="images/t-mobile.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
+									<a href="#"><img src="images/sprint.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
+									<a href="#"><img src="images/cricket.jpg" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
+								</ul>
+							</li>
+
+							<li class="has-children">
+								<input type="checkbox" name="group-3" id="group-3">
+								<label for="group-3">Insurance</label>
+
+								<ul>
+									<a href="#"><img src="images/statefarm.jpg" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
+									<a href="#"><img src="images/allstate.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
+									<a href="#"><img src="images/liberty-mutual.jpg" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
+									<a href="#"><img src="images/chubb.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
+								</ul>
+							</li>
+
+							<li class="has-children">
+								<input type="checkbox" name="group-4" id="group-4">
+								<label for="group-4">TV and Internet</label>
+								<ul>
+									<a href="#"><img src="images/verizon.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
+									<a href="#"><img src="images/comcast.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
+									<a href="#"><img src="images/dish.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
+									<a href="#"><img src="images/direct.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
+								</ul>
+							</li>
+						</ul>
+
+
+						<div class="form-group">
 							<br>
-							<!-- Checkbock hide javascript-->
+							<input type="checkbox" style="margin-right:10px" class="input-checkbox" id="pay-company-check" onchange="companyChanged();">Pay a new company？
+							<br>
+						</div>
+						<br>
 
-							<script type="text/javascript">
-								function companyChanged() {
-									if ($('.input-checkbox').is(":checked"))
-										$(".add-company-payee-info").show() && $(companybutton1).hide();
-									else
-										$(".add-company-payee-info").hide() && $(companybutton1).show();
-								}
-							</script>
-							<!-- Checkbock hide javascript ends-->
+						<script type="text/javascript">
+							function companyChanged() {
+								if ($('.input-checkbox').is(":checked"))
+									$(".add-company-payee-info").show() && $(companybutton1).hide();
+								else
+									$(".add-company-payee-info").hide() && $(companybutton1).show();
+							}
+						</script>
 
-							<div class="add-company-payee-info" hidden>
-								<div class="form-group">
-									<label for="company-name">Company Name</label>
-									<input type="text" class="form-control " id="company-name" placeholder="" style="width:50%;">
-								</div>
-								<div class="form-group">
-									<label for="company-account">Account Number</label>
-									<input type="text" class="form-control " id="company-account" placeholder="" style="width:50%;">
-								</div>
-								<div class="form-check">
-									<label class="form-check-label">
+						<div class="add-company-payee-info" hidden>
+							<div class="form-group">
+								<label for="company-name">Company Name</label>
+								<input type="text" class="form-control " id="company-name" placeholder="" style="width:50%;">
+							</div>
+							<div class="form-group">
+								<label for="company-account">Account Number</label>
+								<input type="text" class="form-control " id="company-account" placeholder="" style="width:50%;">
+							</div>
+							<div class="form-check">
+								<label class="form-check-label">
 											<input type="checkbox" class="form-check-input">
 						Add to my payee list
 										</label></div>
-								<button type="button" id="companybutton2" href="#chooseAccount" class="btn btn-primary" onclick="chooseAccount()">Next Step</button>
-								<br>
-						</form>
-						<br>
-						<br>
+							<button type="button" id="companybutton2" href="#chooseAccount" class="btn btn-primary" onclick="chooseAccount()">Next Step</button>
+							<br>
 						</div>
+
+						<br>
+						<br>
 					</div>
 
 					<div id="menu2" class="tab-pane fade">
@@ -498,6 +582,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 			</div>
 		</div>
+
 		<!-- //footer ends here, edited by Xin-->
 
 		<script src="js/responsiveslides.min.js"></script>
