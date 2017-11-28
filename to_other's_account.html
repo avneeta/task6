@@ -139,7 +139,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li>|&nbsp;</li>
 							<li><a href="history.html" class="menuUser">Account History</a></li>
 							<li>|&nbsp;</li>
-							<li><a href="transfer_func.html" class="menuUser active">Transfer</a></li>
+							<li><a href="transfer_func_head.html" class="menuUser active">Transfer</a></li>
 							<li>|&nbsp;</li>
 							<li><a href="deposit_funds.html" class="menuUser">Deposit</a></li>
 							<li>|&nbsp;</li>
@@ -165,19 +165,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<!-- header ends here, edited by Xin -->
 
-		<!-- 			<div id="menuUserUl">
-					<a href="#index.html" class="menuUser">Home</a>
-					<a href="#about" 	class="menuUser">Transfer</a>
-					<a href="#products" class="menuUser">Deposit</a>
-					<a href="#clients" class="menuUser">Withdraw</a>
-					<a href="#clients" class="menuUser">Pay Bills</a>
-					<a href="#contact" class="menuUser">Open an Account</a>
-					<a href="#contact" class="menuUser">Account History</a>
-					<a href="#contact" class="menuUser">Loans</a>
-			</div> -->
-
-
-		<!-- //banner -->
 		<!-- welcome -->
 		<div style="background: white">
 			<div class="container">
@@ -187,27 +174,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 
 				<ul class="nav nav-tabs">
-					<li class="nav-item active"><a class="nav-link" data-toggle="tab" href="#menu1">To my Devonshire Account</a></li>
-					<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#menu2">To my External Account</a></li>
-					<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#menu3">To someone else</a></li>
-					<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#menu5">Auto Transfer</a></li>
+					<li class="nav-item active"><a class="nav-link" data-toggle="tab" href="#menu1">To other's Devonshire Account</a></li>
+					<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#menu2">To other's External Account</a></li>
 					<li class="nav-item hidden"><a class="nav-link" id="make-payment-tab" data-toggle="tab" href="#menu4"></a></li>
 				</ul>
 
 				<div class="tab-content" style="padding-left:10px" ;>
+
+
 					<div id="menu1" class="tab-pane fade in active">
 						<br>
 						<form>
-							<!-- <div class="form-group">
 
-								<input type="checkbox" style="margin-right:10px" class="input-checkbox" id="pay-company-check" onchange="companyChanged();">New Transaction？
-								<br>
-							</div> -->
-							<!-- 	<div class="nextStep">
-								<button type="button" id="companybutton1" href="#chooseAccount" class="btn btn-primary" onclick="chooseAccount()">Next Step</button>
-							</div> -->
-							<!-- <br> -->
-							<!-- Checkbock hide javascript-->
 
 							<script type="text/javascript">
 								function companyChanged() {
@@ -220,6 +198,63 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<!-- Checkbock hide javascript ends-->
 
 							<div class="add-company-payee-info">
+								<div class="form-group">
+							<input type="text" class="form-control" id="search-person" style="width:51%;display:inline-block;" value="Search from current payee list" size="30" onFocus="this.value='';" onBlur="if (this.value == '') {this.value ='Search from current payee list';}">
+							<a href="# "><span style="color:black; display:inline-block; " class="glyphicon glyphicon-search "> </span></a>
+							<br><br>
+							<input type="checkbox" style="margin-right:10px" class="input-checkbox" id="pay-person-checkbox" onchange="personChanged();">Pay a new person？
+							<br></div><script type="text/javascript">
+							function personChanged() {
+								if ($('.input-checkbox').is(":checked"))
+									$(".add-person-payee-info").show() && $(personbutton1).hide();
+								else
+									$(".add-person-payee-info").hide() && $(personbutton1).show();;
+							}
+						</script>
+						<!-- Checkbock hide javascript ends-->
+
+						<div class="add-person-payee-info" hidden>
+							<div class="form-group">
+								<label for="first-name">First Name:&nbsp;</label>
+								<input type="text" class="form-control " id="first-name" placeholder="" style="width:18%; display:inline-block;">
+								<label for="last-name">&nbsp;&nbsp;Last Name:&nbsp;</label>
+								<input type="email " class="form-control " id="last-name" placeholder="" style="width:18%; display:inline-block;">
+							</div>
+							<div class="form-group">
+								<label for="address1">Address Line1:</label>
+								<input type="text" class="form-control " id="address1" placeholder="" style="width:53.5%;">
+							</div>
+							<div class="form-group ">
+								<label for="address2 ">Address Line2:(optional)</label>
+								<input type="text" class="form-control " id="address2" placeholder="" style="width:53.5%;">
+							</div>
+							<div class="form-group ">
+								<label for="city">City:</label>
+								<input type="text" class="form-control" id="city" placeholder=" " style="width:11.5%;display:inline-block;">
+								<label for="states">&nbsp;&nbsp;States:&nbsp;</label>
+								<input type="text" class="form-control" id="states" placeholder=" " style="width:12.5%;display:inline-block;">
+								<label for="zipcode">&nbsp;&nbsp;ZIP Code:&nbsp;</label>
+								<input type="text" class="form-control " id="zipcode" placeholder="" style="width:11.5%;display:inline-block;">
+							</div>
+							<div class="form-group ">
+
+							</div>
+							<div class="form-group ">
+								<label for="phone-number">Phone Number:&nbsp;</label>
+								<input type="text" class="form-control " id="phone-number" placeholder="" style="width:53.5%">
+							</div>
+							<div class="form-group ">
+								<label for="email">Email Address:&nbsp;</label>
+								<input type="email" class="form-control " id="email" placeholder="" style="width:53.5%">
+
+
+							<div class="form-check">
+								<label class="form-check-label">
+											<input type="checkbox" class="form-check-input">
+						Add to my payee list
+										</label></div><br>
+																	</div>	</div>
+
 								<div class="form-group">
 									<label for="company-name">From Account</label>
 									<select class="form-control" id="pay from account" style="width:30%">
@@ -233,13 +268,36 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="form-group">
 									<label for="company-account">To Account</label>
 									<select class="form-control" id="account-to-pay" style="width:30%">
-									<option>Checking account 0123-4567-8901 </option>
-									<option>Checking account 9333-7777-2222</option>
-									<option>Saving account 5123-4567-3686</option>
-									<option>Saving account 8666-6666-3333</option>
-									<option>Growth account 0888-8888-8888</option>
+									<option>Select </option>
 								</select>
 								</div>
+
+								<input type="checkbox" style="margin-right:10px" class="input-checkbox" id="pay-person-checkbox" onchange="personChanged();">Add new External Account<br>
+								<br>
+								<script type="text/javascript">
+								function personChanged() {
+									if ($('.input-checkbox').is(":checked"))
+										$(".add-person-payee-info").show() && $(personbutton1).hide();
+									else
+										$(".add-person-payee-info").hide() && $(personbutton1).show();;
+								}
+							</script>
+								<div class="form-group ">
+							<div class="add-person-payee-info" hidden>
+									<label for="phone-number"> Account Number&nbsp;</label>
+									<input type="text" class="form-control " id="phone-number" placeholder="" style="width:53.5%">
+								
+
+									<label for="phone-number">Re-enter Account Number&nbsp;</label>
+									<input type="text" class="form-control " id="phone-number" placeholder="" style="width:53.5%">
+								<br>
+								<div><label for="company-account"> Verification Method</label>
+							<select class="form-control" id="account-to-pay" style="width:30%">
+									<option>Verify Instantly </option>
+									<option>Verify with last two deposits </option><br><br>
+
+							</select><br><br>
+						</div></div>
 								<div class="form-check">
 								</div>
 								<button type="button" id="companybutton2" href="#chooseAccount" class="btn btn-primary" onclick="chooseAccount()">Next Step</button>
@@ -249,6 +307,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<br>
 						</div>
 					</div>
+				</form>
+			</div>
 					<!-- button hide javascript-->
 					<script type="text/javascript">
 						function chooseAccount() {
@@ -260,16 +320,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div id="menu2" class="tab-pane fade">
 						<br>
 						<form>
-							<!-- <div class="form-group">
-
-								<input type="checkbox" style="margin-right:10px" class="input-checkbox" id="pay-company-check" onchange="companyChanged();">New Transaction？
-								<br>
-							</div> -->
-							<!-- 	<div class="nextStep">
-								<button type="button" id="companybutton1" href="#chooseAccount" class="btn btn-primary" onclick="chooseAccount()">Next Step</button>
-							</div> -->
-							<!-- Checkbock hide javascript-->
-
+							
 							<script type="text/javascript">
 								function companyChanged() {
 									if ($('.input-checkbox').is(":checked"))
@@ -281,6 +332,63 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<!-- Checkbock hide javascript ends-->
 
 							<div class="add-company-payee-info">
+									<div class="form-group">
+							<input type="text" class="form-control" id="search-person" style="width:51%;display:inline-block;" value="Search from current payee list" size="30" onFocus="this.value='';" onBlur="if (this.value == '') {this.value ='Search from current payee list';}">
+							<a href="# "><span style="color:black; display:inline-block; " class="glyphicon glyphicon-search "> </span></a>
+							<br><br>
+							<input type="checkbox" style="margin-right:10px" class="input-checkbox" id="pay-person-checkbox" onchange="personChanged();">Pay a new person？
+							<br></div><script type="text/javascript">
+							function personChanged() {
+								if ($('.input-checkbox').is(":checked"))
+									$(".add-person-payee-info").show() && $(personbutton1).hide();
+								else
+									$(".add-person-payee-info").hide() && $(personbutton1).show();;
+							}
+						</script>
+						<!-- Checkbock hide javascript ends-->
+
+						<div class="add-person-payee-info" hidden>
+							<div class="form-group">
+								<label for="first-name">First Name:&nbsp;</label>
+								<input type="text" class="form-control " id="first-name" placeholder="" style="width:18%; display:inline-block;">
+								<label for="last-name">&nbsp;&nbsp;Last Name:&nbsp;</label>
+								<input type="email " class="form-control " id="last-name" placeholder="" style="width:18%; display:inline-block;">
+							</div>
+							<div class="form-group">
+								<label for="address1">Address Line1:</label>
+								<input type="text" class="form-control " id="address1" placeholder="" style="width:53.5%;">
+							</div>
+							<div class="form-group ">
+								<label for="address2 ">Address Line2:(optional)</label>
+								<input type="text" class="form-control " id="address2" placeholder="" style="width:53.5%;">
+							</div>
+							<div class="form-group ">
+								<label for="city">City:</label>
+								<input type="text" class="form-control" id="city" placeholder=" " style="width:11.5%;display:inline-block;">
+								<label for="states">&nbsp;&nbsp;States:&nbsp;</label>
+								<input type="text" class="form-control" id="states" placeholder=" " style="width:12.5%;display:inline-block;">
+								<label for="zipcode">&nbsp;&nbsp;ZIP Code:&nbsp;</label>
+								<input type="text" class="form-control " id="zipcode" placeholder="" style="width:11.5%;display:inline-block;">
+							</div>
+							<div class="form-group ">
+
+							</div>
+							<div class="form-group ">
+								<label for="phone-number">Phone Number:&nbsp;</label>
+								<input type="text" class="form-control " id="phone-number" placeholder="" style="width:53.5%">
+							</div>
+							<div class="form-group ">
+								<label for="email">Email Address:&nbsp;</label>
+								<input type="email" class="form-control " id="email" placeholder="" style="width:53.5%">
+
+
+							<div class="form-check">
+								<label class="form-check-label">
+											<input type="checkbox" class="form-check-input">
+						Add to my payee list
+										</label></div><br>
+																	</div>	</div>
+
 								<div class="form-group">
 									<label for="company-name">From Account</label>
 									<select class="form-control" id="account-to-pay" style="width:30%">

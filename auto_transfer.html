@@ -139,7 +139,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li>|&nbsp;</li>
 							<li><a href="history.html" class="menuUser">Account History</a></li>
 							<li>|&nbsp;</li>
-							<li><a href="transfer_func.html" class="menuUser active">Transfer</a></li>
+							<li><a href="transfer_func_head.html" class="menuUser active">Transfer</a></li>
 							<li>|&nbsp;</li>
 							<li><a href="deposit_funds.html" class="menuUser">Deposit</a></li>
 							<li>|&nbsp;</li>
@@ -187,67 +187,56 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 
 				<ul class="nav nav-tabs">
-					<li class="nav-item active"><a class="nav-link" data-toggle="tab" href="#menu1">To my Devonshire Account</a></li>
-					<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#menu2">To my External Account</a></li>
-					<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#menu3">To someone else</a></li>
-					<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#menu5">Auto Transfer</a></li>
+					<li class="nav-item active"><a class="nav-link" data-toggle="tab" href="#menu1">Auto Transfer</a></li>
 					<li class="nav-item hidden"><a class="nav-link" id="make-payment-tab" data-toggle="tab" href="#menu4"></a></li>
 				</ul>
 
 				<div class="tab-content" style="padding-left:10px" ;>
+
 					<div id="menu1" class="tab-pane fade in active">
-						<br>
-						<form>
-							<!-- <div class="form-group">
+					<br>
+					<div class="form-group">
+						<input type="text" class="form-control" id="search-auto-name" style="width:51%;display:inline-block;" value="Search from current payee list" size="30" onFocus="this.value='';" onBlur="if (this.value == '') {this.value ='Search from current payee list';}">
+						<a href="# "><span style="color:black; display:inline-block; " class="glyphicon glyphicon-search "> </span></a>
+						<br><br>
+						<input type="radio" style="margin-right:10px" name="radAnswer" class="input-radio" id="radio1" onchange="valueChanged();" style="display:inline-block;">Pay a new company？
+						<input type="radio" style="margin-right:10px" name="radAnswer" class="input-radio" id="radio2" onchange="valueChanged();" style="display:inline-block;">Pay a new person？
+						<br><br></div>
+					<hr>
 
-								<input type="checkbox" style="margin-right:10px" class="input-checkbox" id="pay-company-check" onchange="companyChanged();">New Transaction？
-								<br>
-							</div> -->
-							<!-- 	<div class="nextStep">
-								<button type="button" id="companybutton1" href="#chooseAccount" class="btn btn-primary" onclick="chooseAccount()">Next Step</button>
-							</div> -->
-							<!-- <br> -->
-							<!-- Checkbock hide javascript-->
+					<!-- Checkbock hide javascript-->
+					<script type="text/javascript">
+						function valueChanged() {
+							if ($(radio1).is(":checked"))
+								$(".new-company-payee-info2").show();
+							else
+								$(".new-company-payee-info2").hide();
 
-							<script type="text/javascript">
-								function companyChanged() {
-									if ($('.input-checkbox').is(":checked"))
-										$(".add-company-payee-info").show() && $(companybutton1).hide();
-									else
-										$(".add-company-payee-info").hide() && $(companybutton1).show();
-								}
-							</script>
-							<!-- Checkbock hide javascript ends-->
+							if ($(radio2).is(":checked"))
+								$(".new-person-payee-info2").show();
+							else
+								$(".new-person-payee-info2").hide();
+						}
+					</script>
+					<!-- Checkbock hide javascript ends-->
 
-							<div class="add-company-payee-info">
-								<div class="form-group">
-									<label for="company-name">From Account</label>
-									<select class="form-control" id="pay from account" style="width:30%">
-									<option>Checking account 0123-4567-8901 </option>
-									<option>Checking account 9333-7777-2222</option>
-									<option>Saving account 5123-4567-3686</option>
-									<option>Saving account 8666-6666-3333</option>
-									<option>Growth account 0888-8888-8888</option>
-								</select>
-								</div>
-								<div class="form-group">
-									<label for="company-account">To Account</label>
-									<select class="form-control" id="account-to-pay" style="width:30%">
-									<option>Checking account 0123-4567-8901 </option>
-									<option>Checking account 9333-7777-2222</option>
-									<option>Saving account 5123-4567-3686</option>
-									<option>Saving account 8666-6666-3333</option>
-									<option>Growth account 0888-8888-8888</option>
-								</select>
-								</div>
-								<div class="form-check">
-								</div>
-								<button type="button" id="companybutton2" href="#chooseAccount" class="btn btn-primary" onclick="chooseAccount()">Next Step</button>
-								<br>
-						</form>
-						<br>
-						<br>
+					<div class="new-company-payee-info2" hidden>
+						<div class="form-group">
+							<label for="company-name2">Company Name</label>
+							<input type="text" class="form-control " id="company-name2" placeholder="" style="width:53.5%;">
 						</div>
+						<div class="form-group">
+							<label for="company-account2">Account Number</label>
+							<input type="text" class="form-control " id="company-account2" placeholder=" " style="width:53.5%;">
+						</div>
+						<div class="form-check">
+							<label class="form-check-label">
+																		<input type="checkbox" class="form-check-input">
+													Add to my payee list
+																	</label></div>
+						</form>
+						<hr>
+					</div>
 					</div>
 					<!-- button hide javascript-->
 					<script type="text/javascript">
@@ -476,50 +465,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</script>
 				<!-- button hide javascript ends-->
 
-				<div id="menu5" class="tab-pane fade">
-					<br>
-					<div class="form-group">
-						<input type="text" class="form-control" id="search-auto-name" style="width:51%;display:inline-block;" value="Search from current payee list" size="30" onFocus="this.value='';" onBlur="if (this.value == '') {this.value ='Search from current payee list';}">
-						<a href="# "><span style="color:black; display:inline-block; " class="glyphicon glyphicon-search "> </span></a>
-						<br><br>
-						<input type="radio" style="margin-right:10px" name="radAnswer" class="input-radio" id="radio1" onchange="valueChanged();" style="display:inline-block;">Pay a new company？
-						<input type="radio" style="margin-right:10px" name="radAnswer" class="input-radio" id="radio2" onchange="valueChanged();" style="display:inline-block;">Pay a new person？
-						<br><br></div>
-					<hr>
-
-					<!-- Checkbock hide javascript-->
-					<script type="text/javascript">
-						function valueChanged() {
-							if ($(radio1).is(":checked"))
-								$(".new-company-payee-info2").show();
-							else
-								$(".new-company-payee-info2").hide();
-
-							if ($(radio2).is(":checked"))
-								$(".new-person-payee-info2").show();
-							else
-								$(".new-person-payee-info2").hide();
-						}
-					</script>
-					<!-- Checkbock hide javascript ends-->
-
-					<div class="new-company-payee-info2" hidden>
-						<div class="form-group">
-							<label for="company-name2">Company Name</label>
-							<input type="text" class="form-control " id="company-name2" placeholder="" style="width:53.5%;">
-						</div>
-						<div class="form-group">
-							<label for="company-account2">Account Number</label>
-							<input type="text" class="form-control " id="company-account2" placeholder=" " style="width:53.5%;">
-						</div>
-						<div class="form-check">
-							<label class="form-check-label">
-																		<input type="checkbox" class="form-check-input">
-													Add to my payee list
-																	</label></div>
-						</form>
-						<hr>
-					</div>
+				
 
 					<div class="new-person-payee-info2" hidden>
 						<div class="form-group">

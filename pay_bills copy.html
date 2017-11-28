@@ -193,7 +193,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li class="nav-item hidden"><a class="nav-link" id="make-payment-tab" data-toggle="tab" href="#menu4">account</a></li>
 				</ul>
 
-				<form>
 				<div class="tab-content" style="padding-left:10px" ;>
 					<div id="menu1" class="tab-pane fade in active">
 						<br>
@@ -318,7 +317,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 					<div id="menu2" class="tab-pane fade">
 						<br>
-
+						<form>
 							<div class="form-group">
 								<input type="text" class="form-control" id="search-person" style="width:51%;display:inline-block;" value="Search from current payee list" size="30" onFocus="this.value='';" onBlur="if (this.value == '') {this.value ='Search from current payee list';}">
 								<a href="# "><span style="color:black; display:inline-block; " class="glyphicon glyphicon-search "> </span></a>
@@ -383,7 +382,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 								<button type="button" id="personbutton2" class="btn btn-primary" onclick="chooseAccount()">Next Step</button>
 								<br>
-
+						</form>
 						<br><br>
 						</div>
 					</div>
@@ -437,7 +436,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 																		<input type="checkbox" class="form-check-input">
 													Add to my payee list
 																	</label></div>
-
+							</form>
 							<hr>
 						</div>
 
@@ -481,7 +480,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<input type="checkbox" class="form-check-input">
 						Add to my payee list
 										</label></div>
-
+							</form>
 							<hr>
 						</div>
 
@@ -517,32 +516,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<option>Annually</option>
   							</select><br>
 								<!-- <input type="password " class="form-control " id="frequency" placeholder="" style="width:53.5%"> -->
-								<!-- Button trigger modal -->
-								<button type="button" class="btn btn-primary" id="autopaybutton2" data-toggle="modal" data-target="#auto-pay-modal">Start the Auto-Payment</button>
-
-								<!-- Modal -->
-								<div class="modal fade" id="auto-pay-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-									<div class="modal-dialog" role="document">
-										<div class="modal-content">
-											<div class="modal-header">
-												<h5 class="modal-title" id="exampleModalLabel">Authorization</h5>
-												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-											</div>
-
-												<div class="modal-body">
-													<label for="pin">Please enter your PIN number:</label>
-													<input type="password" class="form-control " id="pin" placeholder="" style="width:50%">
-												</div>
-												<div class="modal-footer">
-													<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-													<button type="submit" class="btn btn-primary">Submit</button>
-												</div>
-
-										</div>
-									</div>
-								</div>
+								<button type="button" id="autopaybutton2" class="btn btn-primary" ;>Start the Auto-Payment</button>
 								<br><br></div>
 						</div>
 					</div>
@@ -581,37 +555,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<input type="date" name="user_date" class="form-control" id="scheduledate" placeholder="" style="width:30%">
 						</div>
 						<div class="nextStep">
-							<button type="button" class="btn btn-primary" href="#chooseAccount" id="make-payment-button1" data-toggle="modal" data-target="#make-payment-modal">Make the payment</button>
-						<!-- Button trigger modal -->
-
-						<!-- Modal -->
-						<div class="modal fade" id="make-payment-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-							<div class="modal-dialog" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h5 class="modal-title" id="exampleModalLabel">Authorization</h5>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			<span aria-hidden="true">&times;</span>
-		</button>
-									</div>
-
-										<div class="modal-body">
-											<label for="pin">Please enter your PIN number:</label>
-											<input type="password" class="form-control " id="pin" placeholder="" style="width:50%">
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-											<button type="submit" class="btn btn-primary">Submit</button>
-										</div>
-
-								</div>
-							</div>
+							<button type="submit" id="make-payment-button1" href="#chooseAccount" class="btn btn-primary">Make the payment</button>
 						</div>
 						<br><br>
 					</div>
 				</div>
 			</div>
-		</form>
 		</div>
 		<!-- footer starts here, edited by Xin-->
 		<div class="footer">
