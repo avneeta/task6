@@ -38,7 +38,7 @@ function login(userid, password) {
             //Open user home page
             window.location.href = "user_home.html";
         }
-    }).fail(function(response) {
+    }).fail(function(response, statusText, xhr) {
     	$("#login-error").empty();
     	response.responseJSON.message.forEach(function(msg) {
 			$('#login-error').append("<span style='padding-left:1px;color:red;'>"+msg+"</spn><br/>");	
