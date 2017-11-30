@@ -139,7 +139,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li>|&nbsp;</li>
 							<li><a href="history.html" class="menuUser">Account History</a></li>
 							<li>|&nbsp;</li>
-							<li><a href="transfer_func_head.html" class="menuUser active">Transfer</a></li>
+							<li><a href="transfer_func_head.html" class="menuUser">Transfer</a></li>
 							<li>|&nbsp;</li>
 							<li><a href="#products" class="menuUser">Deposit</a></li>
 							<li>|&nbsp;</li>
@@ -194,21 +194,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</ul>
 
 				<form>
-				<div class="tab-content" style="padding-left:10px" ;>
-					<div id="menu1" class="tab-pane fade in active">
-						<br>
-
-						<ul class="cd-accordion-menu animated">
-							<li class="has-children">
-								<input type="checkbox" name="group-1" id="group-1">
-								<label for="group-1">Utilities</label>
-								<ul>
-									<a href="#"><img src="images/DLC.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
-									<a href="#"><img src="images/people-natural-gas.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
-									<a href="#"><img src="images/columbia-gas-of-pa-horiz.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
-									<a href="#"><img src="images/westpenn.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
-								</ul>
-								<!-- <ul>
+					<div class="tab-content" style="padding-left:10px" ;>
+						<div id="menu1" class="tab-pane fade in active">
+							<br>
+							<div class="form-group">
+								<input type="text" class="form-control" id="search-auto-name" style="width:51%;display:inline-block;" value="Search from current payee list" size="30" onFocus="this.value='';" onBlur="if (this.value == '') {this.value ='Search from current payee list';}">
+								<a href="# "><span style="color:black; display:inline-block; " class="glyphicon glyphicon-search "> </span></a>
+								<br><br>
+							</div>
+							<ul class="cd-accordion-menu animated">
+								<li class="has-children">
+									<input type="checkbox" name="group-1" id="group-1">
+									<label for="group-1">Utilities</label>
+									<ul>
+										<a href="#"><img src="images/DLC.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
+										<a href="#"><img src="images/people-natural-gas.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
+										<a href="#"><img src="images/columbia-gas-of-pa-horiz.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
+										<a href="#"><img src="images/westpenn.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
+									</ul>
+									<!-- <ul>
 									<li class="has-children">
 										<input type="checkbox" name="sub-group-1" id="sub-group-1">
 										<label for="sub-group-1">Sub Group 1</label>
@@ -239,85 +243,85 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<li><a href="#0">Image</a></li>
 									<li><a href="#0">Image</a></li>
 								</ul> -->
-							</li>
+								</li>
 
-							<li class="has-children">
-								<input type="checkbox" name="group-2" id="group-2">
-								<label for="group-2">Phone</label>
+								<li class="has-children">
+									<input type="checkbox" name="group-2" id="group-2">
+									<label for="group-2">Phone</label>
 
-								<ul>
-									<a href="#"><img src="images/att.jpg" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
-									<a href="#"><img src="images/t-mobile.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
-									<a href="#"><img src="images/sprint.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
-									<a href="#"><img src="images/cricket.jpg" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
-								</ul>
-							</li>
+									<ul>
+										<a href="#"><img src="images/att.jpg" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
+										<a href="#"><img src="images/t-mobile.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
+										<a href="#"><img src="images/sprint.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
+										<a href="#"><img src="images/cricket.jpg" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
+									</ul>
+								</li>
 
-							<li class="has-children">
-								<input type="checkbox" name="group-3" id="group-3">
-								<label for="group-3">Insurance</label>
+								<li class="has-children">
+									<input type="checkbox" name="group-3" id="group-3">
+									<label for="group-3">Insurance</label>
 
-								<ul>
-									<a href="#"><img src="images/statefarm.jpg" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
-									<a href="#"><img src="images/allstate.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
-									<a href="#"><img src="images/liberty-mutual.jpg" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
-									<a href="#"><img src="images/chubb.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
-								</ul>
-							</li>
+									<ul>
+										<a href="#"><img src="images/statefarm.jpg" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
+										<a href="#"><img src="images/allstate.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
+										<a href="#"><img src="images/liberty-mutual.jpg" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
+										<a href="#"><img src="images/chubb.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
+									</ul>
+								</li>
 
-							<li class="has-children">
-								<input type="checkbox" name="group-4" id="group-4">
-								<label for="group-4">TV and Internet</label>
-								<ul>
-									<a href="#"><img src="images/verizon.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
-									<a href="#"><img src="images/comcast.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
-									<a href="#"><img src="images/dish.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
-									<a href="#"><img src="images/direct.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
-								</ul>
-							</li>
-						</ul>
+								<li class="has-children">
+									<input type="checkbox" name="group-4" id="group-4">
+									<label for="group-4">TV and Internet</label>
+									<ul>
+										<a href="#"><img src="images/verizon.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
+										<a href="#"><img src="images/comcast.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
+										<a href="#"><img src="images/dish.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
+										<a href="#"><img src="images/direct.png" onclick="chooseAccount()" alt=" " class="img-accordion"/></a>
+									</ul>
+								</li>
+							</ul>
 
 
-						<div class="form-group">
-							<br>
-							<input type="checkbox" style="margin-right:10px" class="input-checkbox" id="pay-company-check" onchange="companyChanged();">Pay a new company？
-							<br>
-						</div>
-						<br>
-
-						<script type="text/javascript">
-							function companyChanged() {
-								if ($('.input-checkbox').is(":checked"))
-									$(".add-company-payee-info").show() && $(companybutton1).hide();
-								else
-									$(".add-company-payee-info").hide() && $(companybutton1).show();
-							}
-						</script>
-
-						<div class="add-company-payee-info" hidden>
 							<div class="form-group">
-								<label for="company-name">Company Name</label>
-								<input type="text" class="form-control " id="company-name" placeholder="" style="width:50%;">
+								<br>
+								<input type="checkbox" style="margin-right:10px" class="input-checkbox" id="pay-company-check" onchange="companyChanged();">Pay a new company？
+								<br>
 							</div>
-							<div class="form-group">
-								<label for="company-account">Account Number</label>
-								<input type="text" class="form-control " id="company-account" placeholder="" style="width:50%;">
-							</div>
-							<div class="form-check">
-								<label class="form-check-label">
+							<br>
+
+							<script type="text/javascript">
+								function companyChanged() {
+									if ($('.input-checkbox').is(":checked"))
+										$(".add-company-payee-info").show() && $(companybutton1).hide();
+									else
+										$(".add-company-payee-info").hide() && $(companybutton1).show();
+								}
+							</script>
+
+							<div class="add-company-payee-info" hidden>
+								<div class="form-group">
+									<label for="company-name">Company Name</label>
+									<input type="text" class="form-control " id="company-name" placeholder="" style="width:50%;">
+								</div>
+								<div class="form-group">
+									<label for="company-account">Account Number</label>
+									<input type="text" class="form-control " id="company-account" placeholder="" style="width:50%;">
+								</div>
+								<div class="form-check">
+									<label class="form-check-label">
 											<input type="checkbox" class="form-check-input">
 						Add to my payee list
-										</label></div>
-							<button type="button" id="companybutton2" href="#chooseAccount" class="btn btn-primary" onclick="chooseAccount()">Next Step</button>
+										</label></div><br>
+								<button type="button" id="companybutton2" href="#chooseAccount" class="btn btn-primary" onclick="chooseAccount()">Next Step</button>
+								<br>
+							</div>
+							<br><br>
+							<br>
 							<br>
 						</div>
 
-						<br>
-						<br>
-					</div>
-
-					<div id="menu2" class="tab-pane fade">
-						<br>
+						<div id="menu2" class="tab-pane fade">
+							<br>
 
 							<div class="form-group">
 								<input type="text" class="form-control" id="search-person" style="width:51%;display:inline-block;" value="Search from current payee list" size="30" onFocus="this.value='';" onBlur="if (this.value == '') {this.value ='Search from current payee list';}">
@@ -326,9 +330,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<input type="checkbox" style="margin-right:10px" class="input-checkbox" id="pay-person-checkbox" onchange="personChanged();">Pay a new person？
 								<br></div>
 							<div class="nextStep">
-								<button type="button" id="personbutton1" href="#chooseAccount" class="btn btn-primary" onclick="chooseAccount()">Next Step</button>
+								<button type="button" id="personbutton1" href="#chooseAccount" class="btn btn-primary" onclick="chooseAccount()">Next Step</button><br><br>
 							</div>
-							<br>
 							<!-- Checkbock hide javascript-->
 							<script type="text/javascript">
 								function personChanged() {
@@ -341,6 +344,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<!-- Checkbock hide javascript ends-->
 
 							<div class="add-person-payee-info" hidden>
+								<hr>
+								<br><br>
 								<div class="form-group">
 									<label for="first-name">First Name:&nbsp;</label>
 									<input type="text" class="form-control " id="first-name" placeholder="" style="width:18%; display:inline-block;">
@@ -380,133 +385,133 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<input type="checkbox" class="form-check-input">
 						Add to my payee list
 										</label></div>
-
+										<br><br>
 								<button type="button" id="personbutton2" class="btn btn-primary" onclick="chooseAccount()">Next Step</button>
 								<br>
 
-						<br><br>
+								<br><br>
+							</div>
 						</div>
-					</div>
 
-					<!-- button hide javascript-->
-					<script type="text/javascript">
-						function chooseAccount() {
-							$('#make-payment-tab').tab('show');
-						}
-					</script>
-					<!-- button hide javascript ends-->
-
-					<div id="menu3" class="tab-pane fade">
-						<br>
-						<div class="form-group">
-							<input type="text" class="form-control" id="search-auto-name" style="width:51%;display:inline-block;" value="Search from current payee list" size="30" onFocus="this.value='';" onBlur="if (this.value == '') {this.value ='Search from current payee list';}">
-							<a href="# "><span style="color:black; display:inline-block; " class="glyphicon glyphicon-search "> </span></a>
-							<br><br>
-							<input type="radio" style="margin-right:10px" name="radAnswer" class="input-radio" id="radio1" onchange="valueChanged();" style="display:inline-block;">Pay a new company？
-							<input type="radio" style="margin-right:10px" name="radAnswer" class="input-radio" id="radio2" onchange="valueChanged();" style="display:inline-block;">Pay a new person？
-							<br><br></div>
-						<hr>
-
-						<!-- Checkbock hide javascript-->
+						<!-- button hide javascript-->
 						<script type="text/javascript">
-							function valueChanged() {
-								if ($(radio1).is(":checked"))
-									$(".new-company-payee-info2").show();
-								else
-									$(".new-company-payee-info2").hide();
-
-								if ($(radio2).is(":checked"))
-									$(".new-person-payee-info2").show();
-								else
-									$(".new-person-payee-info2").hide();
+							function chooseAccount() {
+								$('#make-payment-tab').tab('show');
 							}
 						</script>
-						<!-- Checkbock hide javascript ends-->
+						<!-- button hide javascript ends-->
 
-						<div class="new-company-payee-info2" hidden>
+						<div id="menu3" class="tab-pane fade">
+							<br>
 							<div class="form-group">
-								<label for="company-name2">Company Name</label>
-								<input type="text" class="form-control " id="company-name2" placeholder="" style="width:53.5%;">
-							</div>
-							<div class="form-group">
-								<label for="company-account2">Account Number</label>
-								<input type="text" class="form-control " id="company-account2" placeholder=" " style="width:53.5%;">
-							</div>
-							<div class="form-check">
-								<label class="form-check-label">
+								<input type="text" class="form-control" id="search-auto-name" style="width:51%;display:inline-block;" value="Search from current payee list" size="30" onFocus="this.value='';" onBlur="if (this.value == '') {this.value ='Search from current payee list';}">
+								<a href="# "><span style="color:black; display:inline-block; " class="glyphicon glyphicon-search "> </span></a>
+								<br><br>
+								<input type="radio" style="margin-right:10px" name="radAnswer" class="input-radio" id="radio1" onchange="valueChanged();" style="display:inline-block;">Pay a new company？
+								<input type="radio" style="margin-right:10px" name="radAnswer" class="input-radio" id="radio2" onchange="valueChanged();" style="display:inline-block;">Pay a new person？
+								<br><br></div>
+							<hr>
+
+							<!-- Checkbock hide javascript-->
+							<script type="text/javascript">
+								function valueChanged() {
+									if ($(radio1).is(":checked"))
+										$(".new-company-payee-info2").show();
+									else
+										$(".new-company-payee-info2").hide();
+
+									if ($(radio2).is(":checked"))
+										$(".new-person-payee-info2").show();
+									else
+										$(".new-person-payee-info2").hide();
+								}
+							</script>
+							<!-- Checkbock hide javascript ends-->
+
+							<div class="new-company-payee-info2" hidden>
+								<div class="form-group">
+									<label for="company-name2">Company Name</label>
+									<input type="text" class="form-control " id="company-name2" placeholder="" style="width:53.5%;">
+								</div>
+								<div class="form-group">
+									<label for="company-account2">Account Number</label>
+									<input type="text" class="form-control " id="company-account2" placeholder=" " style="width:53.5%;">
+								</div>
+								<div class="form-check">
+									<label class="form-check-label">
 																		<input type="checkbox" class="form-check-input">
 													Add to my payee list
 																	</label></div>
 
-							<hr>
-						</div>
-
-						<div class="new-person-payee-info2" hidden>
-							<div class="form-group">
-								<label for="firstName2">First Name:&nbsp;</label>
-								<input type="text" class="form-control " id="firstName2" placeholder="" style="width:18%; display:inline-block;">
-								<label for="lastName2">&nbsp;&nbsp;Last Name:&nbsp;</label>
-								<input type="text" class="form-control " id="lastName2" placeholder="" style="width:18%; display:inline-block;">
-							</div>
-							<div class="form-group ">
-								<label for="address2 ">Address Line1:</label>
-								<input type="text" class="form-control " id="address21" placeholder="" style="width:53.5%;">
-							</div>
-							<div class="form-group ">
-								<label for="address22 ">Address Line2:(optional)</label>
-								<input type="text" class="form-control " id="address22" placeholder="" style="width:53.5%;">
-							</div>
-							<div class="form-group ">
-								<label for="city2">City:</label>
-								<input type="text" class="form-control" id="city2" placeholder=" " style="width:11.5%;display:inline-block;">
-								<label for="states2">&nbsp;&nbsp;States:&nbsp;</label>
-								<input type="text" class="form-control" id="states2" placeholder=" " style="width:12.5%;display:inline-block;">
-								<label for="zipcode2">&nbsp;&nbsp;ZIP Code:&nbsp;</label>
-								<input type="text " class="form-control " id="zipcode2" placeholder="" style="width:11.5%;display:inline-block;">
-							</div>
-							<div class="form-group ">
-
-							</div>
-							<div class="form-group ">
-								<label for="phone-number2">Phone Number:&nbsp;</label>
-								<input type="text " class="form-control " id="phone-number2" placeholder="" style="width:53.5%">
-							</div>
-							<div class="form-group ">
-								<label for="email2">Email Address:&nbsp;</label>
-								<input type="email " class="form-control " id="email2" placeholder="" style="width:53.5%">
+								<hr>
 							</div>
 
-							<div class="form-check">
-								<label class="form-check-label">
+							<div class="new-person-payee-info2" hidden>
+								<div class="form-group">
+									<label for="firstName2">First Name:&nbsp;</label>
+									<input type="text" class="form-control " id="firstName2" placeholder="" style="width:18%; display:inline-block;">
+									<label for="lastName2">&nbsp;&nbsp;Last Name:&nbsp;</label>
+									<input type="text" class="form-control " id="lastName2" placeholder="" style="width:18%; display:inline-block;">
+								</div>
+								<div class="form-group ">
+									<label for="address2 ">Address Line1:</label>
+									<input type="text" class="form-control " id="address21" placeholder="" style="width:53.5%;">
+								</div>
+								<div class="form-group ">
+									<label for="address22 ">Address Line2:(optional)</label>
+									<input type="text" class="form-control " id="address22" placeholder="" style="width:53.5%;">
+								</div>
+								<div class="form-group ">
+									<label for="city2">City:</label>
+									<input type="text" class="form-control" id="city2" placeholder=" " style="width:11.5%;display:inline-block;">
+									<label for="states2">&nbsp;&nbsp;States:&nbsp;</label>
+									<input type="text" class="form-control" id="states2" placeholder=" " style="width:12.5%;display:inline-block;">
+									<label for="zipcode2">&nbsp;&nbsp;ZIP Code:&nbsp;</label>
+									<input type="text " class="form-control " id="zipcode2" placeholder="" style="width:11.5%;display:inline-block;">
+								</div>
+								<div class="form-group ">
+
+								</div>
+								<div class="form-group ">
+									<label for="phone-number2">Phone Number:&nbsp;</label>
+									<input type="text " class="form-control " id="phone-number2" placeholder="" style="width:53.5%">
+								</div>
+								<div class="form-group ">
+									<label for="email2">Email Address:&nbsp;</label>
+									<input type="email " class="form-control " id="email2" placeholder="" style="width:53.5%">
+								</div>
+
+								<div class="form-check">
+									<label class="form-check-label">
 											<input type="checkbox" class="form-check-input">
 						Add to my payee list
 										</label></div>
 
-							<hr>
-						</div>
-
-						<div class="accountInfo">
-							<div class="form-group ">
-								<label for="auto-amount">Amount&nbsp;</label>
-								<input type="text" class="form-control " id="auto-amount" placeholder="" style="width:30%">
+								<hr>
 							</div>
-							<div class="form-group ">
-								<label for="account-to-pay">Choose your account&nbsp;</label>
-								<select class="form-control" id="account-to-pay" style="width:30%">
+
+							<div class="accountInfo">
+								<div class="form-group ">
+									<label for="auto-amount">Amount&nbsp;</label>
+									<input type="text" class="form-control " id="auto-amount" placeholder="" style="width:30%">
+								</div>
+								<div class="form-group ">
+									<label for="account-to-pay">Choose your account&nbsp;</label>
+									<select class="form-control" id="account-to-pay" style="width:30%">
 									<option>Checking account 0123-4567-8901 </option>
 									<option>Checking account 9333-7777-2222</option>
 									<option>Saving account 5123-4567-3686</option>
 									<option>Saving account 8666-6666-3333</option>
 									<option>Growth account 0888-8888-8888</option>
 								</select>
-							</div>
-							<div class="form-group ">
-								<label for="date">First Payment Date&nbsp;</label>
-								<input type="date" name="user_date" class="form-control" id="date" placeholder="" style="width:30%">
-							</div>
-							<div class="form-group ">
-								<label for="frequency">Frequency:&nbsp;</label>
-								<select class="form-control" id="frequency" style="width:30%">
+								</div>
+								<div class="form-group ">
+									<label for="date">First Payment Date&nbsp;</label>
+									<input type="date" name="user_date" class="form-control" id="date" placeholder="" style="width:30%">
+								</div>
+								<div class="form-group ">
+									<label for="frequency">Frequency:&nbsp;</label>
+									<select class="form-control" id="frequency" style="width:30%">
     							<option>Select a frequency</option>
 									<option>Weekly</option>
     							<option>Every 2 weeks</option>
@@ -516,20 +521,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<option>Every 6 months</option>
 									<option>Annually</option>
   							</select><br>
-								<!-- <input type="password " class="form-control " id="frequency" placeholder="" style="width:53.5%"> -->
-								<!-- Button trigger modal -->
-								<button type="button" class="btn btn-primary" id="autopaybutton2" data-toggle="modal" data-target="#auto-pay-modal">Start the Auto-Payment</button>
+									<!-- <input type="password " class="form-control " id="frequency" placeholder="" style="width:53.5%"> -->
+									<!-- Button trigger modal -->
+									<br><button type="button" class="btn btn-primary" id="autopaybutton2" data-toggle="modal" data-target="#auto-pay-modal">Start the Auto-Payment</button>
+									<br><br><br>
 
-								<!-- Modal -->
-								<div class="modal fade" id="auto-pay-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-									<div class="modal-dialog" role="document">
-										<div class="modal-content">
-											<div class="modal-header">
-												<h5 class="modal-title" id="exampleModalLabel">Authorization</h5>
-												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<!-- Modal -->
+									<div class="modal fade" id="auto-pay-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+										<div class="modal-dialog" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h5 class="modal-title" id="exampleModalLabel">Authorization</h5>
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-											</div>
+												</div>
 
 												<div class="modal-body">
 													<label for="pin">Please enter your PIN number:</label>
@@ -540,135 +546,135 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 													<button type="submit" class="btn btn-primary">Submit</button>
 												</div>
 
+											</div>
 										</div>
 									</div>
-								</div>
-								<br><br></div>
+									<br><br></div>
+							</div>
 						</div>
-					</div>
 
 
 
-					<div id="menu4" class="tab-pane fade">
-						<br>
-						<div class="form-group">
-							<label for="auto-amount">Amount&nbsp;</label>
-							<input type="text" class="form-control " id="auto-amount" style="width:30%">
-						</div>
-						<div class="form-group ">
-							<label for="account-to-pay">Choose your account&nbsp;</label>
-							<select class="form-control" id="account-to-pay" style="width:30%">
+						<div id="menu4" class="tab-pane fade">
+							<br>
+							<div class="form-group">
+								<label for="auto-amount">Amount&nbsp;</label>
+								<input type="text" class="form-control " id="auto-amount" style="width:30%">
+							</div>
+							<div class="form-group ">
+								<label for="account-to-pay">Choose your account&nbsp;</label>
+								<select class="form-control" id="account-to-pay" style="width:30%">
 					<option>Checking account 0123-4567-8901 </option>
 					<option>Checking account 9333-7777-2222</option>
 					<option>Saving account 5123-4567-3686</option>
 					<option>Saving account 8666-6666-3333</option>
 					<option>Growth account 0888-8888-8888</option>
 				</select><br>
-							<input type="checkbox" style="margin-right:10px" class="input-checkbox" id="schedule-checkbox" onchange="scheduleChanged();">Schedule a payment?
-						</div>
-						<!-- Checkbock hide javascript-->
-						<script type="text/javascript">
-							function scheduleChanged() {
-								if ($('.input-checkbox').is(":checked"))
-									$(schedule).show();
-								else
-									$(schedule).hide();
-							}
-						</script>
-						<!-- Checkbock hide javascript ends-->
-						<div class="form-group" id="schedule" hidden>
-							<label for="date">Payment Date&nbsp;</label>
-							<input type="date" name="user_date" class="form-control" id="scheduledate" placeholder="" style="width:30%">
-						</div>
-						<div class="nextStep">
-							<button type="button" class="btn btn-primary" href="#chooseAccount" id="make-payment-button1" data-toggle="modal" data-target="#make-payment-modal">Make the payment</button>
-						<!-- Button trigger modal -->
+								<input type="checkbox" style="margin-right:10px" class="input-checkbox" id="schedule-checkbox" onchange="scheduleChanged();">Schedule a payment?
+							</div>
+							<!-- Checkbock hide javascript-->
+							<script type="text/javascript">
+								function scheduleChanged() {
+									if ($('.input-checkbox').is(":checked"))
+										$(schedule).show();
+									else
+										$(schedule).hide();
+								}
+							</script>
+							<!-- Checkbock hide javascript ends-->
+							<div class="form-group" id="schedule" hidden>
+								<label for="date">Payment Date&nbsp;</label>
+								<input type="date" name="user_date" class="form-control" id="scheduledate" placeholder="" style="width:30%">
+							</div><br>
+							<div class="nextStep">
+								<button type="button" class="btn btn-primary" href="#chooseAccount" id="make-payment-button1" data-toggle="modal" data-target="#make-payment-modal">Make the payment</button>
+								<br><br><br><br><!-- Button trigger modal -->
 
-						<!-- Modal -->
-						<div class="modal fade" id="make-payment-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-							<div class="modal-dialog" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h5 class="modal-title" id="exampleModalLabel">Authorization</h5>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<!-- Modal -->
+								<div class="modal fade" id="make-payment-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h5 class="modal-title" id="exampleModalLabel">Authorization</h5>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 			<span aria-hidden="true">&times;</span>
 		</button>
+											</div>
+
+											<div class="modal-body">
+												<label for="pin">Please enter your PIN number:</label>
+												<input type="password" class="form-control " id="pin" placeholder="" style="width:50%">
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												<button type="submit" class="btn btn-primary">Submit</button>
+											</div>
+
+										</div>
 									</div>
-
-										<div class="modal-body">
-											<label for="pin">Please enter your PIN number:</label>
-											<input type="password" class="form-control " id="pin" placeholder="" style="width:50%">
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-											<button type="submit" class="btn btn-primary">Submit</button>
-										</div>
-
 								</div>
+								<br><br>
 							</div>
 						</div>
-						<br><br>
+					</div>
+				</form>
+			</div>
+			<!-- footer starts here, edited by Xin-->
+			<div class="footer">
+				<div class="container">
+					<h3><a href="index.html">Devonshire</a></h3><br>
+					<a href="#" title="Notice of Privacy Practices" style="color:white">Notice of Privacy Practices </a> |
+					<a href="#" title="Terms of Use" style="color:white"> Terms of Use </a> |
+					<a href="#" title="Online Privacy & Security" style="color:white"> Online Privacy & Security</a>
+					<p>Copyright © 2017 Devonshire. All rights reserved</a>
+					</p>
+					<div class="social-icons">
+						<ul>
+							<li><a href="#" class="fa fa-facebook icon icon-border facebook"> </a></li>
+							<li><a href="#" class="fa fa-twitter icon icon-border twitter"> </a></li>
+							<li><a href="#" class="fa fa-google-plus icon icon-border googleplus"> </a></li>
+							<li><a href="#" class="fa fa-dribbble icon icon-border dribbble"> </a></li>
+							<li><a href="#" class="fa fa-rss icon icon-border rss"> </a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
-		</form>
-		</div>
-		<!-- footer starts here, edited by Xin-->
-		<div class="footer">
-			<div class="container">
-				<h3><a href="index.html">Devonshire</a></h3><br>
-				<a href="#" title="Notice of Privacy Practices" style="color:white">Notice of Privacy Practices </a> |
-				<a href="#" title="Terms of Use" style="color:white"> Terms of Use </a> |
-				<a href="#" title="Online Privacy & Security" style="color:white"> Online Privacy & Security</a>
-				<p>Copyright © 2017 Devonshire. All rights reserved</a>
-				</p>
-				<div class="social-icons">
-					<ul>
-						<li><a href="#" class="fa fa-facebook icon icon-border facebook"> </a></li>
-						<li><a href="#" class="fa fa-twitter icon icon-border twitter"> </a></li>
-						<li><a href="#" class="fa fa-google-plus icon icon-border googleplus"> </a></li>
-						<li><a href="#" class="fa fa-dribbble icon icon-border dribbble"> </a></li>
-						<li><a href="#" class="fa fa-rss icon icon-border rss"> </a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
 
-		<!-- //footer ends here, edited by Xin-->
+			<!-- //footer ends here, edited by Xin-->
 
-		<script src="js/responsiveslides.min.js"></script>
-		<script src="js/jarallax.js"></script>
-		<script src="js/SmoothScroll.min.js"></script>
-		<script type="text/javascript">
-			/* init Jarallax */
-			$('.jarallax').jarallax({
-				speed: 0.5,
-				imgWidth: 1366,
-				imgHeight: 768
-			})
-		</script>
+			<script src="js/responsiveslides.min.js"></script>
+			<script src="js/jarallax.js"></script>
+			<script src="js/SmoothScroll.min.js"></script>
+			<script type="text/javascript">
+				/* init Jarallax */
+				$('.jarallax').jarallax({
+					speed: 0.5,
+					imgWidth: 1366,
+					imgHeight: 768
+				})
+			</script>
 
-		<script type="text/javascript" src="js/move-top.js"></script>
-		<script type="text/javascript" src="js/easing.js"></script>
-		<!-- here stars scrolling icon -->
-		<script type="text/javascript">
-			$(document).ready(function() {
-				/*
-					var defaults = {
-					containerID: 'toTop', // fading element id
-					containerHoverID: 'toTopHover', // fading element hover id
-					scrollSpeed: 1200,
-					easingType: 'linear'
-					};
-				*/
+			<script type="text/javascript" src="js/move-top.js"></script>
+			<script type="text/javascript" src="js/easing.js"></script>
+			<!-- here stars scrolling icon -->
+			<script type="text/javascript">
+				$(document).ready(function() {
+					/*
+						var defaults = {
+						containerID: 'toTop', // fading element id
+						containerHoverID: 'toTopHover', // fading element hover id
+						scrollSpeed: 1200,
+						easingType: 'linear'
+						};
+					*/
 
-				$().UItoTop({
-					easingType: 'easeOutQuart'
+					$().UItoTop({
+						easingType: 'easeOutQuart'
+					});
+
 				});
-
-			});
-		</script>
-		<!-- //here ends scrolling icon -->
+			</script>
+			<!-- //here ends scrolling icon -->
 </body>
 
 </html>
