@@ -10,10 +10,10 @@ jQuery(document).ready(function($) {
 
 $(document).ready(function() {
     $("#user-login").click(function() {
-        var userid = $("#userid").val();
+        var username = $("#username").val();
         var password = $("#password").val();
 
-        login(userid, password);
+        login(username, password);
     });
 
     $().UItoTop({ easingType: 'easeOutQuart' });
@@ -21,12 +21,12 @@ $(document).ready(function() {
 });
 
 //Login function
-function login(userid, password) {
+function login(username, password) {
     $.ajax({
         url: URL + "/api/login",
         method: "POST",
         data:{
-	   		"userid" : userid,
+	   		"username" : username,
 	   		"password" : password
 	   	},
         xhrFields: {
