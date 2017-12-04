@@ -168,7 +168,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</ul>
 					<div class="tab-content" style="padding-left:10px" ;>
 						<div id="menu1" class="tab-pane fade in active">
-							<div id="account-verify-error"></div>
 							<div class="form-group">
 								<label for="enroll-account">Devonshire Account number</label>
 								<input type="text" class="form-control " id="enroll-account" placeholder="" style="width:95%;">
@@ -179,19 +178,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 							<div class="form-group">
 								<label for="birth">Date of Birth</label><br><br>
-								<input type="date" class="form-control " id="dob" placeholder="" style="width:95%;">
+								<input type="date" class="form-control " id="birth" placeholder="" style="width:95%;">
 							</div>
 
 							<div class="nextStep">
-								<button type="button" id="nextbutton1" class="btn btn-primary">Next</button>
-							</div>							
+								<button type="button" id="nextbutton1" class="btn btn-primary" onclick="Customized()">Next</button>
+							</div>
+							<script type="text/javascript">
+								function Customized() {
+									$('#customized').tab('show');
+								}
+							</script>
 							<br>
 						</div>
 
 						<div id="menu2" class="tab-pane fade">
 							<div class="form-group">
-								<label for="id">Username</label>
-								<input type="text" class="form-control " id="username" placeholder="" style="width:95%;">
+								<label for="id">User ID</label>
+								<input type="text" class="form-control " id="id" placeholder="" style="width:95%;">
 							</div>
 							<div class="form-group">
 								<label for="psw">Password</label><br><span style="font-size:5px;">Requirement: at least 8 characters in length, and must contain at least 3 of the following 4 types of characters:
@@ -199,11 +203,11 @@ lower case letters (i.e. a-z),
 upper case letters (i.e. A-Z),
 numbers (i.e. 0-9),
 special characters  (e.g. ~!@#$%^*)</span>
-								<input type="password" class="form-control " id="password" placeholder="" style="width:95%;">
+								<input type="password" class="form-control " id="psw" placeholder="" style="width:95%;">
 							</div>
 							<div class="form-group">
 								<label for="confirm-psw">Confirm Password</label>
-								<input type="password" class="form-control " id="confirm-password" placeholder="" style="width:95%;">
+								<input type="password" class="form-control " id="confirm-psw" placeholder="" style="width:95%;">
 							</div>
 							<div class="buttons">
 								<button type="button" id="backbutton1" class="btn btn-primary" onclick="backTo1()" style="display:inline-block; margin: 0 5em 0 0;">Back</button>
@@ -224,11 +228,9 @@ special characters  (e.g. ~!@#$%^*)</span>
 
 						<div id="menu3" class="tab-pane fade">
 							<div class="form-group ">
-								<div id="enroll-error"></div>
-								<input type="hidden" id="userid"/>
-								<label for="q1">Security Question 1</label>
+								<label for="q1">Security Quesion 1</label>
 								<select class="form-control" id="q1" style="width:95%">
-									<option>Security Question 1</option>
+									<option>Security Quesion 1</option>
 									<option>What is your pet’s name?</option>
 									<option>In what city or town did your mother and father meet?</option>
 									<option>What is your favorite movie?</option>
@@ -238,9 +240,9 @@ special characters  (e.g. ~!@#$%^*)</span>
 								<input type="text" class="form-control " id="a1" placeholder="" style="width:95%;">
 							</div>
 							<div class="form-group ">
-								<label for="q2">Security Question 2</label>
+								<label for="q2">Security Quesion 2</label>
 								<select class="form-control" id="q2" style="width:95%">
-									<option>Security Question 2</option>
+									<option>Security Quesion 2</option>
 									<option>In what town was your first job?</option>
 									<option>What is the name of your favorite childhood friend?</option>
 									<option>What is your favorite team?</option>
@@ -250,9 +252,9 @@ special characters  (e.g. ~!@#$%^*)</span>
 								<input type="text" class="form-control " id="a2" placeholder="" style="width:95%;">
 							</div>
 							<div class="form-group ">
-								<label for="q3">Security Question 3</label>
+								<label for="q3">Security Quesion 3</label>
 								<select class="form-control" id="q3" style="width:95%">
-									<option>Security Question 3</option>
+									<option>Security Quesion 3</option>
 									<option>What time of the day were you born? (hh:mm)?</option>
 									<option>What is your grandmother's (on your mother's side) maiden name?</option>
 									<option>In what town or city was your first full time job?</option>
@@ -274,7 +276,7 @@ special characters  (e.g. ~!@#$%^*)</span>
 
 							<div class="buttons">
 								<button type="button" id="backbutton2" class="btn btn-primary" onclick="backTo2()" style="display:inline-block; margin: 0 5em 0 0;">Back</button>
-								<button type="button" id="enroll" href="#security-question" class="btn btn-primary" style="display:inline-block;">Confirm and Enroll</button>
+								<button type="button" id="button2" href="#security-question" class="btn btn-primary" onclick="security()" style="display:inline-block;">Confirm and Enroll</button>
 							</div>
 							<!-- <script type="text/javascript">
 								function security() {
@@ -334,7 +336,6 @@ special characters  (e.g. ~!@#$%^*)</span>
 	</script>
 
 	<script type="text/javascript" src="js/move-top.js"></script>
-	<script type="text/javascript" src="js/enroll.js"></script>
 	<script type="text/javascript" src="js/easing.js"></script>
 	<!-- here stars scrolling icon -->
 	<script type="text/javascript">
