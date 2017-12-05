@@ -38,11 +38,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 }
 hr {
     display: block;
-    height: 2px;
     border: 0;
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
+    color: #9ACD32;
+	background-color: #9ACD32;
+	height: 4px;
 }
 .agileits-heading h3{
 	font-size: 22px;
@@ -58,6 +60,15 @@ hr {
 	margin-top: 10px;
 	margin-bottom: 0px;
 }
+#alert {
+	float:right;
+	width: 400px;
+}
+#alert p{
+	font-size: 14px;
+	margin-left: 10px;
+	color: red;
+}
 #alerTable p {
 	font-size: 16px;
 	margin: 3px;
@@ -67,6 +78,11 @@ hr {
 	font-size: 14px;
 	text-align: center;
 	margin: 0px;
+}
+.viewBalance {
+	border:none;
+	border-collapse:collapse;
+	border-radius: 5px;
 }
 </style>
 <!-- //font -->
@@ -132,19 +148,19 @@ hr {
 				<div class="user-nav">
 					<div class="collapse navbar-collapse" id="mainNavbar">
 						<ul id="menuUserUl">
-							<li><a class="active" href="index.html" class="scroll">Home</a></li>
+							<li><a href="user_home.html" class="menuUser" class="active" >My accounts</a></li>
 							<li>|&nbsp;</li>
 							<li><a href="history.html" class="menuUser">Account History</a></li>
 							<li>|&nbsp;</li>
-							<li><a href="transfer_func.html" class="menuUser">Transfer</a></li>
-							<li>|&nbsp;</li>
-							<li><a href="Deposit_funds.html" class="menuUser">Deposit</a></li>
+							<li><a href="transfer_func_head.html" class="menuUser">Transfer</a></li>
 							<li>|&nbsp;</li>
 							<li><a href="pay_bills.html" class="menuUser">Pay Bills</a></li>
 							<li>|&nbsp;</li>
+							<li><a href="deposit_funds.html" class="menuUser">Deposit</a></li>
+							<li>|&nbsp;</li>
 							<li><a href="#contact" class="menuUser">Loans</a></li>
 							<li>|&nbsp;</li>
-							<li><a href="#contact" class="menuUser">Investment</a></li>
+							<li><a href="profile.html" class="menuUser">Customer Profile</a></li>
 						</ul>
 					</div> <!-- ollapse navbar-collapse-->
 				</div> <!-- user-nav-->
@@ -176,14 +192,18 @@ hr {
 						    	<li> <a href="#"> Personal 0123-4567-8901 </a>
 									<span style="margin-left:100px;"> </span>
 						    	    <input class="idName" type="hidden" size="20" value="checki1"/>
-						    		<input type="text" id="checking1" size="12" value="$ 3333.33" readonly="readonly" style="text-align:right; margin-right:30px">
+						    		<input class="viewBalance" type="text" id="checking1" size="12" value="$ 3333.33" readonly="readonly" style="text-align:right; margin-right:30px">
 						    	</li>
+<!--
 								<li> <a href="#"> Personal 9333-7777-2222 </a>
 									<span style="margin-left:100px;"> </span>
 									<input class="idName" type="hidden" size="20" value="checki2"/>
-									<input type="text" size="12" value="$ 2222.22" readonly="readonly" style="text-align:right; margin-right:30px">
-								</li>
-						    	<small id="emailHelp" id="checking2" class="form-text text-muted">Checking acount is flexiable.</small>
+									<input class="viewBalance" type="text" size="12" value="$ 2222.22" readonly="readonly" style="text-align:right; margin-right:30px">
+								</li> -->
+						    	<small id="emailHelp" id="checking2" class="form-text text-muted">
+						    	Our acount is designed for your best convenience</small> <br>
+						    	<small id="emailHelp" id="checking2" class="form-text text-muted">
+						    	Want to open another acount? $100 bonus will be awarded</small>
 					    	</ul>
 							<hr>
 							<label for="exampleInputEmail1"> My Saving Account</label>
@@ -191,14 +211,15 @@ hr {
 						    	<li> <a href="#"> Personal 5123-4567-3686 </a>
 									<span style="margin-left:100px;"> </span>
 						    		<input class="idName" type="hidden" size="20" value="saving1"/>
-						    		<input type="text" id="saving1" size="12" value="$ 5555.55" readonly="readonly" style="text-align:right; margin-right:30px">
+						    		<input class="viewBalance" type="text" id="saving1" size="12" value="$ 5555.55" readonly="readonly" style="text-align:right; margin-right:30px">
 						    	</li>
-								<li> <a href="#"> Personal 8666-6666-3333 </a>
+<!-- 								<li> <a href="#"> Personal 8666-6666-3333 </a>
 									<span style="margin-left:100px; "> </span>
 									<input class="idName" type="hidden" size="20" value="saving2"/>
-									<input type="text" id="saving2" size="12" value="$ 6666.66" readonly="readonly" style="text-align:right; margin-right:30px">
-								</li>
-							    <small id="emailHelp" class="form-text text-muted">A interest rate will be awarded.</small>
+									<input class="viewBalance" type="text" id="saving2" size="12" value="$ 6666.66" readonly="readonly" style="text-align:right; margin-right:30px">
+								</li> -->
+							    <small id="emailHelp" class="form-text text-muted">
+							    We will perform monthly transfer-in for your saving account</small>
 							</ul>
 							<hr>
 							<label for="exampleInputEmail1"> My Growth Account</label>
@@ -206,51 +227,38 @@ hr {
 								<li> <a href="#"> Personal 0888-8888-8888 </a>
 									<span style="margin-left:100px;"> </span>
 						    		<input class="idName" type="hidden" size="20" value="growth1"/>
-									<input type="text" id="growth2" size="12" value="$ 8888.88" readonly="readonly" style="text-align:right; margin-right:30px">
+									<input class="viewBalance" type="text" id="growth2" size="12" value="$ 8888.88" readonly="readonly" style="text-align:right; margin-right:30px">
 								</li>
-							    <small id="emailHelp" class="form-text text-muted">A Huge chance to gain profit.</small>
+							    <small id="emailHelp" class="form-text text-muted">
+							    Enjoy our growth account, a huge chance to gain profit</small>
 							</ul>
 							<hr>
 						<td>
 
 						<td valign="top">
-							<div id="alert" style="color: green; margin-left: 50px; padding: 0px">
-								<h3> Activity Center </h3>
-								<br>
-								<table id="alerTable" border="1" style="border-collapse:separate; text-align: center;">
-									<tr>
-										<td> <a href="#">  Account Histroy </a> </td>
-										<td> <a href="#">  Pay Bills </a> </td>
-										<td> <a href="#">  Alert </a> </td>
-<!-- 										<td> <input type="button" class="Zbutton" size="80" value="Account Histroy"> </td>
-										<td> <input type="button" class="Zbutton" size="80" value="Pay Bills"> </td>
-										<td> <input type="button" class="Zbutton" size="80" value="Alert"> </td> -->
-									</tr>
-									<tr>
-										<td> <a href="#">  Transfer </a> </td>
-										<td> <a href="#">  Open an Account </a> </td>
-										<td> <a href="#">  Lending </a> </td>
-<!-- 										<td> <input type="button" class="Zbutton" size="80" value="Transfer"> </td>
-										<td> <input type="button" class="Zbutton" size="80" value="Open an Account"> </td>
-										<td> <input type="button" class="Zbutton" size="80" value=" Lending"> </td> -->
-									</tr>
-									<tr>
-										<td> <a href="#">  Deposit </a> </td>
-										<td> <a href="#">  More Offers </a> </td>
-										<td> <a href="#">  Messages </a> </td>
-<!-- 										<td> <input type="button" class="Zbutton" size="80" value="Deposit"> </td>
-										<td> <input type="button" class="Zbutton" size="80" value="More Offers"> </td>
-										<td> <input type="button" class="Zbutton" size="80" value="Messages"> </td> -->
-									</tr>
-								</table>
-								<br>
+							<div id="alert" style="color: green; margin-left: 60px; padding: 0px">
 								<hr>
+								<h3 style="font-size:20px"> Alert Center </h3>
+									<ul>
+										<li> <a href="#">Pay Rent remind:</a>
+											<p><i> Due in 10 days, $1000 to Mozart Management </i></p>
+										</li>
+										<li> <a href="#">Transfer remind:</a>
+											<p><i> $100 will be transferred to Saving on DEC-14-2017</i></p>
+										</li>
+									</ul>
+
+
 								<div id="contactDE">
-									<h3> More Options </h3>
-									<p> Want to schedule an appointment with us ? </p>
+									<hr>
+									<h3 style="font-size:20px"> More Options </h3>
+									<ul>
+										<li> Enjoy our online tour ? </li>
+										<li> Schedule an appointment with us ? </li>
+									</ul>
 									<img src="./images/1.jpg" width="120" height="80" />
-									<img src="./images/1.jpg" width="120" height="80" />
-									<img src="./images/1.jpg" width="120" height="80" />
+									<img src="./images/2.jpg" width="120" height="80" />
+									<img src="./images/3.jpg" width="120" height="80" />
 								</div>
 							</div>
 						</td>
@@ -305,7 +313,7 @@ hr {
 						</div>
 						<div class="welcome-grid-left agileinfo-welcm-grid2">
 							<h4>We are Ubiquitous </h4>
-							<p>Tech savvy customers today require ubiquitous access to their accounts.  Today mobile applications are essential (both Android and IPhone) as well as browser-based access from any computing platform. Our focus is on low cost convenience (reduce fees for services and convenient means for accessing accounts and services) <br></p>
+							<p>Tech savvy customers today require ubiquitous access to their accounts.Today mobile applications are essential (both Android and IPhone) as well as browser-based access from any computing platform. Our focus is on low cost convenience <br></p>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
