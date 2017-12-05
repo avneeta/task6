@@ -95,6 +95,27 @@ ul.mapList {
 			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 		});
 	});
+};
+</script>
+
+<script type="text/javascript">
+	document.getElementById('frontCheckImagePicker').onchange = function() {
+	    var imgFile = this.files[0];
+	    var fr = new FileReader();
+	    fr.onload = function() {
+	        document.getElementById('viewFront').getElementsByTagName('img')[0].src = fr.result;
+	    };
+	    fr.readAsDataURL(imgFile);
+	};
+
+	document.getElementById('backCheckImagePicker').onchange = function() {
+    	var imgFile = this.files[0];
+    	var fr = new FileReader();
+    	fr.onload = function() {
+	        document.getElementById('viewBack').getElementsByTagName('img')[0].src = fr.result;
+	    };
+	    fr.readAsDataURL(imgFile);
+	};
 </script>
 <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -158,9 +179,9 @@ ul.mapList {
 							<li>|&nbsp;</li>
 							<li><a href="pay_bills.html" class="menuUser">Pay Bills</a></li>
 							<li>|&nbsp;</li>
-							<li><a href="#contact" class="menuUser">Open an Account</a></li>
+							<li><a href="loans.html" class="menuUser active">Loans</a></li>
 							<li>|&nbsp;</li>
-							<li><a href="#contact" class="menuUser">Lending</a></li>
+							<li><a href="#contact" class="menuUser">Investment</a></li>
 						</ul>
 					</div> <!-- ollapse navbar-collapse-->
 				</div> <!-- user-nav-->
@@ -217,11 +238,11 @@ ul.mapList {
 		                <table style="margin-top: 10px;">
 		                <tr>
 		                    <td> <label> &nbsp;&nbsp;&nbsp; Front of Check: &nbsp;&nbsp;</label> </td>
-		                    <td> <input type="file" class="form-control-file" id="frontCheckImage"> </td>
+		                    <td> <input type="file" class="form-control-file" id="frontCheckImagePicker"> </td>
 		                </tr>
 		                <tr>
 		                    <td> <label align="right"> &nbsp;&nbsp;&nbsp; Back of Check: &nbsp;&nbsp;</label> </td>
-		                    <td> <input type="file" class="form-control-file" id="backCheckImage" style="margin-top:10px;"> </td>
+		                    <td> <input type="file" class="form-control-file" id="backCheckImagePicker" style="margin-top:10px;"> </td>
 		                </tr>
 		                </table>
 		            </div>
@@ -235,9 +256,9 @@ ul.mapList {
 		                <br>
 		                <table style="margin:10px; padding:10px">
 		                <tr>
-		                    <td> <img src="images/checkFront.png" height="150" width="300" alt="ImageFront"> </td>
+		                    <td> <img id="viewFront" src="images/checkFront.png" height="150" width="300"> </td>
 		                    <td> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; </td> 
-		                    <td> <img src="images/checkBack.png" height="150" width="300" alt="ImageBack" > </td>
+		                    <td> <img id="viewBack" src="images/checkBack.png" height="150" width="300"> </td>
 		                </tr>
 		                </table>
 		            </div>
