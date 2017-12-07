@@ -8,148 +8,150 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html lang="en">
 
 <head>
-	<title>Devonshire OBS| User Home:: w3layouts</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="utf-8">
-	<meta name="keywords" content="Devonshire OBS, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+    <title>Devonshire OBS| User Home:: w3layouts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Devonshire OBS, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-	<script type="application/x-javascript">
-		addEventListener("load", function() {
-			setTimeout(hideURLbar, 0);
-		}, false);
+    <script type="application/x-javascript">
+    addEventListener("load", function() {
+        setTimeout(hideURLbar, 0);
+    }, false);
 
-		function hideURLbar() {
-			window.scrollTo(0, 1);
-		}
-	</script>
-	<!-- bootstrap-css -->
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-	<!--// bootstrap-css -->
-	<!-- css -->
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-	<!--// css -->
-	<!-- font-awesome icons -->
-	<link href="css/font-awesome.css" rel="stylesheet">
-	<!-- //font-awesome icons -->
-	<!-- font -->
-	<link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
-	<link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    }
+    </script>
+    <!-- bootstrap-css -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!--// bootstrap-css -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" type="text/css" media="all" />
+    <!--// css -->
+    <!-- font-awesome icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome icons -->
+    <!-- font -->
+    <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <style type="text/css">
+    .menuUser {
+        font-size: 20px;
+        margin-left: 40px;
+        color: coral;
+        word-spacing: 5px;
+    }
 
-	<style type="text/css">
-		.menuUser {
-			font-size: 20px;
-			margin-left: 40px;
-			color: coral;
-			word-spacing: 5px;
-		}
+    #menuUserUl {
+        color: green;
+    }
 
-		#menuUserUl {
-			color: green;
-		}
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 1em 0;
+        padding: 0;
+    }
 
-		hr {
-			display: block;
-			height: 1px;
-			border: 0;
-			border-top: 1px solid #ccc;
-			margin: 1em 0;
-			padding: 0;
-		}
-
-		.agileits-heading h3,
-		p {
-			font-size: 22px;
-			color: green;
-			padding: 0px;
-			margin-top: 10px;
-			margin-bottom: 0px;
-		}
-	</style>
-	<!-- //font -->
-	<script src="js/jquery-1.11.1.min.js"></script>
-	<script src="js/bootstrap.js"></script>
-	<script type="text/javascript">
-		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event) {
-				event.preventDefault();
-				$('html,body').animate({
-					scrollTop: $(this.hash).offset().top
-				}, 1000);
-			});
-		});
-	</script>
-	<!--[if lt IE 9]>
+    .agileits-heading h3,
+    p {
+        font-size: 22px;
+        color: green;
+        padding: 0px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    </style>
+    <!-- //font -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/transactionhistory.js"></script>
+    <script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $(".scroll").click(function(event) {
+            event.preventDefault();
+            $('html,body').animate({
+                scrollTop: $(this.hash).offset().top
+            }, 1000);
+        });
+    });
+    </script>
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+    <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <![endif]-->
 </head>
 
 <body>
-
-	<!-- header starts here, edited by Xin -->
-	<!-- banner -->
-	<div class="banner">
-		<div class="header">
-			<div class="container">
-				<div class="header-left">
-					<div class="w3layouts-logo">
-						<h1>
+    <!-- header starts here, edited by Xin -->
+    <!-- banner -->
+    <div class="banner">
+        <div class="header">
+            <div class="container">
+                <div class="header-left">
+                    <div class="w3layouts-logo">
+                        <h1>
 							<a href="index.html">Devonshire</a>
 						</h1>
-					</div>
-
-					<!--					<div class="clearfix"> </div>-->
-				</div>
-				<div class="top-nav">
-					<nav class="navbar navbar-default">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-										<span class="sr-only">Toggle navigation</span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-									</button>
-						</div>
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							<ul class="nav navbar-nav">
-								<!-- <li><a href="blog.html">Login</a></li> -->
-								<li>
-									<form><input type="text" value="" size="14" onFocus="this.value='';" onBlur="if (this.value == '') {this.value ='';}"></form>
-								</li>
-								<li><a href="#"><span style="color:white;" class="glyphicon glyphicon-search"> </span></a></li>
-								<li class="dropdown">
-									<a href="index.html" class="dropdown-toggle" data-hover="Pages" data-toggle="dropdown"> Language <b class="caret"></b></a>
-									<ul class="dropdown-menu">
-										<li><a href="index.html">English</a></li>
-										<li><a href="index.html">Español</a></li>
-									</ul>
-								</li>
-								<li><a href="index.html">Logout</a></li>
-							</ul>
-							<div class="clearfix"> </div>
-						</div>
-					</nav>
-				</div>
-			</div>
-			<div class="container">
-				<div class="user-nav">
-					<div class="collapse navbar-collapse" id="mainNavbar">
-						<ul id="menuUserUl">
-							<li><a href="user_home.html" class="menuUser">My accounts</a></li>
-							<li>|&nbsp;</li>
-							<li><a href="history.html" class="menuUser active">Account History</a></li>
-							<li>|&nbsp;</li>
-							<li><a href="transfer_func_head.html" class="menuUser">Transfer</a></li>
-							<li>|&nbsp;</li>
-							<li><a  href="pay_bills.html" class="menuUser">Pay Bills</a></li>
-							<li>|&nbsp;</li>
-							<li><a href="deposit_funds.html" class="menuUser">Deposit</a></li>
-							<li>|&nbsp;</li>
-							<li><a href="loans.html"  class="menuUser">Loans</a></li>
-							<li>|&nbsp;</li>
-							<li><a href="profile.html" class="menuUser">Customer Profile</a></li>
-						</ul>
-						<!-- 				<ul class="nav navbar-nav navbar-main">
+                    </div>
+                    <!--					<div class="clearfix"> </div>-->
+                </div>
+                <div class="top-nav">
+                    <nav class="navbar navbar-default">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <!-- <li><a href="blog.html">Login</a></li> -->
+                                <li>
+                                    <form>
+                                        <input type="text" value="" size="14" onFocus="this.value='';" onBlur="if (this.value == '') {this.value ='';}">
+                                    </form>
+                                </li>
+                                <li><a href="#"><span style="color:white;" class="glyphicon glyphicon-search"> </span></a></li>
+                                <li class="dropdown">
+                                    <a href="index.html" class="dropdown-toggle" data-hover="Pages" data-toggle="dropdown"> Language <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="index.html">English</a></li>
+                                        <li><a href="index.html">Español</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="index.html">Logout</a></li>
+                            </ul>
+                            <div class="clearfix"> </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="container">
+                <div class="user-nav">
+                    <div class="collapse navbar-collapse" id="mainNavbar">
+                        <ul id="menuUserUl">
+                            <li><a href="user_home.html" class="menuUser">My accounts</a></li>
+                            <li>|&nbsp;</li>
+                            <li><a href="history.html" class="menuUser active">Account History</a></li>
+                            <li>|&nbsp;</li>
+                            <li><a href="transfer_func_head.html" class="menuUser">Transfer</a></li>
+                            <li>|&nbsp;</li>
+                            <li><a href="pay_bills.html" class="menuUser">Pay Bills</a></li>
+                            <li>|&nbsp;</li>
+                            <li><a href="deposit_funds.html" class="menuUser">Deposit</a></li>
+                            <li>|&nbsp;</li>
+                            <li><a href="loans.html" class="menuUser">Loans</a></li>
+                            <li>|&nbsp;</li>
+                            <li><a href="profile.html" class="menuUser">Customer Profile</a></li>
+                        </ul>
+                        <!-- 				<ul class="nav navbar-nav navbar-main">
 					<li><a class="active" href="#index.html" class="scroll">Home</a></li>
 					<li><a href="#about" class="menuUser">Transfer</a></li>
 					<li><a href="#products" class="menuUser">Deposit</a></li>
@@ -159,13 +161,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li><a href="#contact" class="menuUser">Account History</a></li>
 					<li><a href="#contact" class="menuUser">Loans</a></li>
 				</ul> -->
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- header ends here, edited by Xin -->
-
-		<!-- 			<div id="menuUserUl">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header ends here, edited by Xin -->
+        <!-- 			<div id="menuUserUl">
 					<a href="#index.html" class="menuUser">Home</a>
 					<a href="#about" 	class="menuUser">Transfer</a>
 					<a href="#products" class="menuUser">Deposit</a>
@@ -175,164 +176,120 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<a href="#contact" class="menuUser">Account History</a>
 					<a href="#contact" class="menuUser">Loans</a>
 			</div> -->
-
-
-		<!-- //banner -->
-		<!-- welcome -->
-		<div style="background: white">
-			<div class="container">
-				<div class="agileits-heading">
-					<br>
-					<h4 style="font-size:35px; padding-left:10px;">Transaction History</h4>
-				</div>
-                <hr>
-				<div class="tab-content" style="padding-left:10px" ;>
-
-							<script type="text/javascript">
-								function companyChanged() {
-									if ($('.input-checkbox').is(":checked"))
-										$(".add-company-payee-info").show() && $(companybutton1).hide();
-									else
-										$(".add-company-payee-info").hide() && $(companybutton1).show();
-								}
-							</script>
-							<!-- Checkbock hide javascript ends-->
-
-							<div class="add-company-payee-info">
-								<div class="form-group">
-									<label for="company-name">Choose Account</label>
-									<select class="form-control" id="pay from account" style="width:30%">
-									<option>Checking account 0123-4567-8901 </option>
-									<option>Checking account 9333-7777-2222</option>
-									<option>Saving account 5123-4567-3686</option>
-									<option>Saving account 8666-6666-3333</option>
-									<option>Growth account 0888-8888-8888</option>
-								</select>
-								</div>
-								<div class="form-group" id="schedule">
-
-                                    <label>From</label>
-                                    <input type="date" name="user_date" class="form-control" id="scheduledate" placeholder="" style="width:16%">
-                                    <label>To</label>
-                                    <input type="date" name="user_date" class="form-control" id="scheduledate" placeholder="" style="width:16%">
-                                </div>
-								<div class="form-check">
-								</div>
-								<button type="button" class="btn btn-primary">Search History</button>
-								<br>
-                                <br>
-                                <a href="#" id="link">Filter the Results</a>
-                                <hr>
-						</div>
+        <!-- //banner -->
+        <!-- welcome -->
+        <div style="background: white">
+            <div class="container">
+                <div class="agileits-heading">
+                    <br>
+                    <div id="transaction-history-error"></div>
+                    <h4 style="font-size:35px; padding-left:10px;">Transaction History</h4>
                 </div>
-
-					<script type="text/javascript">
-                        function Show_Hidden(obj)
-                        {
-                         if(obj.style.display=="block")
-                         {
-                          obj.style.display='none';
-                         }
-                         else
-                         {
-                          obj.style.display='block';
-                         }
-                        }
-                        window.onload=function()
-                        {
-                         var olink=document.getElementById("link");
-                         var odiv=document.getElementById("thediv");
-                         olink.onclick=function()
-                         {
-                          Show_Hidden(odiv);
-                          return false;
-                         }
-                        }
+                <hr>
+                <div class="tab-content" style="padding-left:10px" ;>
+                    <script type="text/javascript">
+                    function companyChanged() {
+                        if ($('.input-checkbox').is(":checked"))
+                            $(".add-company-payee-info").show() && $(companybutton1).hide();
+                        else
+                            $(".add-company-payee-info").hide() && $(companybutton1).show();
+                    }
                     </script>
-
-                    <div id="thediv" style="display:none" class="filterresult">
-                        <label>Sorted by:</label>
-                        <input type="radio" style="margin-right:10px" name="radAnswer" class="input-radio" id="radio1" onchange="valueChanged();" style="display:inline-block;" checked="checked">Date
-						<input type="radio" style="margin-right:10px" name="radAnswer" class="input-radio" id="radio2" onchange="valueChanged();" style="display:inline-block;">Amount
-                        <input type="radio" style="margin-right:10px" name="radAnswer" class="input-radio" id="radio2" onchange="valueChanged();" style="display:inline-block;">Category
+                    <!-- Checkbock hide javascript ends-->
+                    <div class="add-company-payee-info">
+                        <div class="form-group">
+                            <label for="company-name">Choose Account</label>
+                            <select class="form-control" id="pay-from-account" style="width:30%">
+                            </select>
+                        </div>
+                        <div class="form-group" id="schedule">
+                            <label>From</label>
+                            <input type="date" name="user_date" class="form-control" id="from-date" placeholder="" style="width:16%">
+                            <label>To</label>
+                            <input type="date" name="user_date" class="form-control" id="to-date" placeholder="" style="width:16%">
+                        </div>
+                        <div class="form-check">
+                        </div>
+                        <button type="button" id="search-history" class="btn btn-primary">Search History</button>
                         <br>
                         <br>
-                        <label>Select Category</label>
-                        <select class="form-control" style="width:15%">
-                            <option>Uncategorized</option>
-                            <option>ATM</option>
-                            <option>Bills</option>
-                            <option>Credit Card Repay</option>
-                            <option>Groceries</option>
-                            <option>HealthCare</option>
-                            <option>Income</option>
-                            <option>Insurance</option>
-                            <option>Mortgage</option>
-                            <option>Personal Transfer</option>
-                            <option>Savings</option>
-                            <option>Shopping</option>
-				        </select>
-                        <br>
-                        <label>Search Description:</label>
-                        <input type="text" class="form-control" style="width:20%">
-                        <label>Search Amount:</label>
-                        <input type="text" class="form-control" style="width:20%">
-                        <br>
-                        <button type="button" class="btn btn-primary">Filter</button>
+                        <!-- <a href="#" id="link">Filter the Results</a> -->
                         <hr>
                     </div>
-                <div class="row" style="background-color: darkgrey;height:35px;">
-                    <div class="col-md-1">Date</div>
-                    <div class="col-md-3">Description</div>
-                    <div class="col-md-2">Withdraw</div>
-                    <div class="col-md-2">Deposit</div>
-                    <div class="col-md-2">Category</div>
-                    <div class="col-md-2">Balance</div>
                 </div>
-                <div class="detail">
-                    <div class="row" style="height:35px;">
-                        <div class="col-md-1">11/12/2017</div>
-                        <div class="col-md-3">WALMART.COM ONLINE</div>
-                        <div class="col-md-2">100.00</div>
-                        <div class="col-md-2"></div>
-                        <div class="col-md-2">Shopping</div>
-                        <div class="col-md-2">106.87</div>
-                    </div>
-                    <div class="row" style="height:35px;">
-                        <div class="col-md-1">11/08/2017</div>
-                        <div class="col-md-3">BANK OF AMERICA,CREDIT CARD</div>
-                        <div class="col-md-2">59.99</div>
-                        <div class="col-md-2"></div>
-                        <div class="col-md-2">Credit Card Repay</div>
-                        <div class="col-md-2">206.87</div>
-                    </div>
+                <script type="text/javascript">
+                function Show_Hidden(obj) {
+                    if (obj.style.display == "block") {
+                        obj.style.display = 'none';
+                    } else {
+                        obj.style.display = 'block';
+                    }
+                }
+                window.onload = function() {
+                    var olink = document.getElementById("link");
+                    var odiv = document.getElementById("thediv");
+                    // olink.onclick = function() {
+                    //     Show_Hidden(odiv);
+                    //     return false;
+                    // };
+                };
+                </script>
+                <div id="thediv" style="display:none" class="filterresult">
+                    <label>Sorted by:</label>
+                    <input type="radio" style="margin-right:10px" name="radAnswer" class="input-radio" id="radio1" onchange="valueChanged();" style="display:inline-block;" checked="checked">Date
+                    <input type="radio" style="margin-right:10px" name="radAnswer" class="input-radio" id="radio2" onchange="valueChanged();" style="display:inline-block;">Amount
+                    <input type="radio" style="margin-right:10px" name="radAnswer" class="input-radio" id="radio2" onchange="valueChanged();" style="display:inline-block;">Category
                     <br>
                     <br>
+                    <label>Select Category</label>
+                    <select class="form-control" style="width:15%">
+                        <option>Uncategorized</option>
+                        <option>ATM</option>
+                        <option>Bills</option>
+                        <option>Credit Card Repay</option>
+                        <option>Groceries</option>
+                        <option>HealthCare</option>
+                        <option>Income</option>
+                        <option>Insurance</option>
+                        <option>Mortgage</option>
+                        <option>Personal Transfer</option>
+                        <option>Savings</option>
+                        <option>Shopping</option>
+                    </select>
                     <br>
+                    <label>Search Description:</label>
+                    <input type="text" class="form-control" style="width:20%">
+                    <label>Search Amount:</label>
+                    <input type="text" class="form-control" style="width:20%">
                     <br>
+                    <button type="button" class="btn btn-primary">Filter</button>
+                    <hr>
+                </div>
+                <table id="transaction-history-table" class="display" width="100%"></table>
+            </div>
+        </div>
+        <!-- footer starts here, edited by Xin-->
+        <div class="footer">
+            <div class="container">
+                <h3><a href="index.html">Devonshire</a></h3>
+                <br>
+                <a href="#" title="Notice of Privacy Practices" style="color:white">Notice of Privacy Practices </a> |
+                <a href="#" title="Terms of Use" style="color:white"> Terms of Use </a> |
+                <a href="#" title="Online Privacy & Security" style="color:white"> Online Privacy & Security</a>
+                <p>Copyright © 2017 Devonshire. All rights reserved</p>
+                <div class="social-icons">
+                    <ul>
+                        <li><a href="#" class="fa fa-facebook icon icon-border facebook"> </a></li>
+                        <li><a href="#" class="fa fa-twitter icon icon-border twitter"> </a></li>
+                        <li><a href="#" class="fa fa-google-plus icon icon-border googleplus"> </a></li>
+                        <li><a href="#" class="fa fa-dribbble icon icon-border dribbble"> </a></li>
+                        <li><a href="#" class="fa fa-rss icon icon-border rss"> </a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-          <!-- footer starts here, edited by Xin-->
-	<div class="footer">
-		<div class="container">
-			<h3><a href="index.html">Devonshire</a></h3><br>
-			<a href="#"  title="Notice of Privacy Practices" style="color:white">Notice of Privacy Practices </a> |
-		<a href="#" title="Terms of Use" style="color:white"> Terms of Use </a> |
-		<a href="#" title="Online Privacy & Security" style="color:white"> Online Privacy & Security</a>
-			<p>Copyright © 2017 Devonshire. All rights reserved</p>
-			<div class="social-icons">
-				<ul>
-					<li><a href="#" class="fa fa-facebook icon icon-border facebook"> </a></li>
-					<li><a href="#" class="fa fa-twitter icon icon-border twitter"> </a></li>
-					<li><a href="#" class="fa fa-google-plus icon icon-border googleplus"> </a></li>
-					<li><a href="#" class="fa fa-dribbble icon icon-border dribbble"> </a></li>
-					<li><a href="#" class="fa fa-rss icon icon-border rss"> </a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<!-- //footer ends here, edited by Xin-->
+        <!-- //footer ends here, edited by Xin-->
     </div>
-    </body>
+</body>
+
 </html>
