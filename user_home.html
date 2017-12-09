@@ -178,7 +178,7 @@ hr {
 				<p id="welcomeUser" style="text-align:center; color:black; font-size: 30px">
 				   Welcome back, Michael </p>
 			</div>
-
+			<div id="user-home-error"></div>
 			<div class="w3lcome-grids" style="margin-top: 0px;">
 			<form>
 			  <div class="form-group" style="margin-left: 100px; margin-top: 0px;">
@@ -187,53 +187,7 @@ hr {
 				<table>
 					<tr>
 						<td>
-							<hr>
-					    	<label for="exampleInputEmail1"> My Checking Account</label>
-					    	<ul>
-						    	<li> <a href="#"> Personal 0123-4567-8901 </a>
-									<span style="margin-left:100px;"> </span>
-						    	    <input class="idName" type="hidden" size="20" value="checki1"/>
-						    		<input class="viewBalance" type="text" id="checking1" size="12" value="$ 3333.33" readonly="readonly" style="text-align:right; margin-right:30px">
-						    	</li>
-<!--
-								<li> <a href="#"> Personal 9333-7777-2222 </a>
-									<span style="margin-left:100px;"> </span>
-									<input class="idName" type="hidden" size="20" value="checki2"/>
-									<input class="viewBalance" type="text" size="12" value="$ 2222.22" readonly="readonly" style="text-align:right; margin-right:30px">
-								</li> -->
-						    	<small id="emailHelp" id="checking2" class="form-text text-muted">
-						    	Our acount is designed for your best convenience</small> <br>
-						    	<small id="emailHelp" id="checking2" class="form-text text-muted">
-						    	Want to open another acount? $100 bonus will be awarded</small>
-					    	</ul>
-							<hr>
-							<label for="exampleInputEmail1"> My Saving Account</label>
-							<ul>
-						    	<li> <a href="#"> Personal 5123-4567-3686 </a>
-									<span style="margin-left:100px;"> </span>
-						    		<input class="idName" type="hidden" size="20" value="saving1"/>
-						    		<input class="viewBalance" type="text" id="saving1" size="12" value="$ 5555.55" readonly="readonly" style="text-align:right; margin-right:30px">
-						    	</li>
-<!-- 								<li> <a href="#"> Personal 8666-6666-3333 </a>
-									<span style="margin-left:100px; "> </span>
-									<input class="idName" type="hidden" size="20" value="saving2"/>
-									<input class="viewBalance" type="text" id="saving2" size="12" value="$ 6666.66" readonly="readonly" style="text-align:right; margin-right:30px">
-								</li> -->
-							    <small id="emailHelp" class="form-text text-muted">
-							    We will perform monthly transfer-in for your saving account</small>
-							</ul>
-							<hr>
-							<label for="exampleInputEmail1"> My Growth Account</label>
-							<ul>
-								<li> <a href="#"> Personal 0888-8888-8888 </a>
-									<span style="margin-left:100px;"> </span>
-						    		<input class="idName" type="hidden" size="20" value="growth1"/>
-									<input class="viewBalance" type="text" id="growth2" size="12" value="$ 8888.88" readonly="readonly" style="text-align:right; margin-right:30px">
-								</li>
-							    <small id="emailHelp" class="form-text text-muted">
-							    Enjoy our growth account, a huge chance to gain profit</small>
-							</ul>
-							<hr>
+							<div id="user-account"></div>
 						<td>
 
 						<td valign="top">
@@ -348,13 +302,14 @@ hr {
 	<script src="js/responsiveslides.min.js"></script>
 	<script src="js/jarallax.js"></script>
 	<script src="js/SmoothScroll.min.js"></script>
+	<script src="js/userhome.js"></script>
 	<script type="text/javascript">
 		/* init Jarallax */
 		$('.jarallax').jarallax({
 			speed: 0.5,
 			imgWidth: 1366,
 			imgHeight: 768
-		})
+		});
 	</script>
 
 	<script type="text/javascript" src="js/move-top.js"></script>

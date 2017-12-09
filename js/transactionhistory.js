@@ -52,7 +52,8 @@ function getTransactionHistory(params) {
 
 			//var datatable = $("#transaction-history-table").DataTable();
 			$('#transaction-history-table').dataTable().fnClearTable();
-			$('#transaction-history-table').dataTable().fnAddData(dataset);
+            if(dataset.length>0)
+			 $('#transaction-history-table').dataTable().fnAddData(dataset);
             console.log("History fetched");
         }
     }).fail(function(response, statusText, xhr) {
